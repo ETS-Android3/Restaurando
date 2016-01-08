@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/list_item_restaurant_category_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        tools:src="@android:drawable/ic_media_play"/>
+    <TextView
+        android:id="@+id/list_item_restaurant_name"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="72dp"
+        android:layout_alignTop="@id/list_item_restaurant_category_image"
+        tools:text="Restaurant Name"/>
+    <TextView
+        android:id="@+id/list_item_restaurant_category_name"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_item_restaurant_name"
+        android:paddingLeft="72dp"
+        tools:text="Mexican"/>
+    <TextView
+        android:id="@+id/list_item_restaurant_rating"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        tools:text="9.1"/>
+</RelativeLayout>

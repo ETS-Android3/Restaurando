@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/kevin-lam/Work/Projects/Restaurando/app/build/intermediates/exploded-aar/com.amulyakhare/com.amulyakhare.textdrawable/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d237556caead5b93d97e18a071059a2c0045978e">
+        <dex dex="/home/kevin-lam/Work/Projects/Restaurando/app/build/intermediates/pre-dexed/debug/classes-165939476b32feecdcdae35c759327292bb43a62.jar" />
+    </item>
+
+</items>
