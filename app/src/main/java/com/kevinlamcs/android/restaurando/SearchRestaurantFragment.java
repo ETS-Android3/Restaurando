@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,6 +15,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.lang.reflect.Field;
 
 
 /**
@@ -22,6 +26,8 @@ import android.widget.LinearLayout;
  * create an instance of this fragment.
  */
 public class SearchRestaurantFragment extends Fragment {
+
+    private Toolbar searchTo;
 
     public static SearchRestaurantFragment newInstance() {
         SearchRestaurantFragment fragment = new SearchRestaurantFragment();
@@ -43,20 +49,22 @@ public class SearchRestaurantFragment extends Fragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.search_restaurant, menu);
 
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.search));
-        SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context
+        inflater.inflate(R.menu.search1, menu);
+
+        SearchView searchViewTop = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id
+                .search_top));
+        SearchManager searchManager1 = (SearchManager) getActivity().getSystemService(Context
                 .SEARCH_SERVICE);
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
-        searchView.setIconified(false);
-        searchView.onActionViewExpanded();;
-        LinearLayout ll1 = (LinearLayout) searchView.getChildAt(0);
+        searchViewTop.setSearchableInfo(searchManager1.getSearchableInfo(getActivity()
+                .getComponentName()));
+        searchViewTop.setIconified(false);
+        searchViewTop.onActionViewExpanded();
+        searchViewTop.setQueryHint("Search");
+        LinearLayout ll1 = (LinearLayout) searchViewTop.getChildAt(0);
         LinearLayout ll2 = (LinearLayout) ll1.getChildAt(2);
         LinearLayout ll3 = (LinearLayout) ll2.getChildAt(1);
         AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) ll3.getChildAt(0);
         autoCompleteTextView.setTextSize(20);
     }
-
-
 }

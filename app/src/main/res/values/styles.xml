@@ -19,6 +19,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="SearchRestaurantActivityTheme" parent="SecondTheme.Base"/>
+    <style name="SearchRestaurantActivityTheme" parent="SecondTheme.Base">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:showDividers">end</item>
+        <item name="android:divider">#90909090</item>
+    </style>
 
 </resources>
