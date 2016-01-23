@@ -2,12 +2,12 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/search_container"
+    android:id="@+id/activity_search_linear_layout_container"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:orientation="vertical">
     <android.support.v7.widget.Toolbar
-        android:id="@+id/search_toolbar"
+        android:id="@+id/activity_search_search_toolbar_term"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:minHeight="?attr/actionBarSize"
@@ -19,12 +19,17 @@
         android:layout_marginLeft="72dp"
         android:background="#90909090"/>
     <android.support.v7.widget.Toolbar
-        android:id="@+id/search_toolbar2"
+        android:id="@+id/activity_search_search_toolbar_location"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:minHeight="?attr/actionBarSize"
-        app:contentInsetStart="56dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <ImageView
+            android:id="@+id/activity_search_image_view_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nearby"
+            android:background="@android:color/transparent"/>
     </android.support.v7.widget.Toolbar>
 
     <include
@@ -32,4 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"/>
+
+    <include layout="@layout/activity_fragment_container" />
 </LinearLayout>

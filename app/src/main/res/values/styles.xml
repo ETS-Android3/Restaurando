@@ -14,16 +14,25 @@
         <item name="colorAccent">@color/colorWhite</item>
     </style>
 
+    <style name="ThirdTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
     <style name="FavoritesActivityTheme" parent="FirstTheme.Base">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="SearchRestaurantActivityTheme" parent="SecondTheme.Base">
+    <style name="SearchActivityTheme" parent="SecondTheme.Base">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:showDividers">end</item>
         <item name="android:divider">#90909090</item>
+    </style>
+
+    <style name="AddActivityTheme" parent="ThirdTheme.Base">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.kevinlamcs.android.restaurando;
+package com.kevinlamcs.android.restaurando.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,15 +7,23 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.kevinlamcs.android.restaurando.R;
+import com.kevinlamcs.android.restaurando.ui.fragment.AddFragment;
+import com.kevinlamcs.android.restaurando.ui.fragment.FavoritesFragment;
+import com.kevinlamcs.android.restaurando.ui.fragment.root.SingleFragmentActivity;
+import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
+
 public class FavoritesActivity extends SingleFragmentActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public static final int REQUEST_RESTAURANT = 0;
 
     @Override
     protected Fragment createFragment() {
@@ -26,32 +34,32 @@ public class FavoritesActivity extends SingleFragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorites);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        //getSupportActionBar().setCustomView(R.layout.activity_favorites_app_bar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.activity_favorites_toolbar);
+        setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.activity_search_fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(), SearchRestaurantActivity.class));
+                startActivityForResult(new Intent(v.getContext(), SearchActivity.class), REQUEST_RESTAURANT);
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.activity_favorites_drawer_layout_container);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.activity_favorites_nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        Log.i("FavoritesActivity", "onBackPressed in FavoritesActivity");
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.activity_favorites_drawer_layout_container);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -81,6 +89,12 @@ public class FavoritesActivity extends SingleFragmentActivity
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+        fragment.onActivityResult(requestCode, resultCode, data);
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -101,7 +115,7 @@ public class FavoritesActivity extends SingleFragmentActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.activity_favorites_drawer_layout_container);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

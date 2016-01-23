@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kevinlamcs.android.restaurando" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/FirstTheme.Base" >
         <activity
-            android:name=".FavoritesActivity"
+            android:name=".ui.activity.FavoritesActivity"
             android:label="@string/app_name"
             android:theme="@style/FavoritesActivityTheme" >
             <intent-filter>
@@ -19,9 +22,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SearchRestaurantActivity"
-            android:parentActivityName=".FavoritesActivity"
-            android:theme="@style/SearchRestaurantActivityTheme">
+            android:name=".ui.activity.SearchActivity"
+            android:parentActivityName=".ui.activity.FavoritesActivity"
+            android:theme="@style/SearchActivityTheme">
+        </activity>
+        <activity
+            android:name=".ui.activity.AddActivity"
+            android:parentActivityName=".ui.activity.SearchActivity"
+            android:theme="@style/AddActivityTheme">
         </activity>
     </application>
 
