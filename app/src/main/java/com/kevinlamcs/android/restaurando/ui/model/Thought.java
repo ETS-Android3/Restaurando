@@ -11,6 +11,10 @@ import android.widget.TextView;
 
 import com.kevinlamcs.android.restaurando.R;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.List;
 
 /**
@@ -18,64 +22,80 @@ import java.util.List;
  */
 public class Thought extends TableRow implements View.OnClickListener {
 
-    public static final float WEIGHT = 1.0f;
+    public static final String THOUGHT = "thought";
 
-    public static int thoughtCount = 0;
+    private static final float WEIGHT = 1.0f;
 
     private static TableLayout mThoughtTable;
+    private Context mContext;
     private TextView mBulletPoint;
-    private EditText mThought;
+    private EditText mEditThought;
+    private TextView mDisplayThought;
     private ImageButton mButtonRemoveThought;
 
     private int mThoughtPosition;
 
     public Thought(Context context, TableLayout table) {
         super(context);
+        mContext = context;
         mThoughtTable = table;
-
-        setupThought(context);
-
-        thoughtCount++;
     }
 
     @Override
     public void onClick(View v) {
         removeThought(mThoughtTable);
-        thoughtCount--;
-
     }
 
-    private void setupThought(Context context) {
+    public void setupAddThought() {
         TableRow.LayoutParams thoughtRowParams = new TableRow.LayoutParams(
                 TableRow.LayoutParams.MATCH_PARENT,
                 TableRow.LayoutParams.WRAP_CONTENT);
         this.setLayoutParams(thoughtRowParams);
 
-        mBulletPoint = new TextView(context);
+        mBulletPoint = new TextView(mContext);
         mBulletPoint.setText("•");
 
-        mThought = new EditText(context);
+        mEditThought = new EditText(mContext);
         TableRow.LayoutParams thoughtParams = new TableRow.LayoutParams(
                 TableRow.LayoutParams.MATCH_PARENT,
                 TableRow.LayoutParams.WRAP_CONTENT,
                 WEIGHT);
-        mThought.setLayoutParams(thoughtParams);
+        mEditThought.setLayoutParams(thoughtParams);
 
-        mButtonRemoveThought = new ImageButton(context);
+        mButtonRemoveThought = new ImageButton(mContext);
         mButtonRemoveThought.setImageResource(R.drawable.remove_thought);
         mButtonRemoveThought.setBackgroundResource(android.R.color.transparent);
         mButtonRemoveThought.setOnClickListener(this);
 
         addView(mBulletPoint);
-        addView(mThought);
+        addView(mEditThought);
         addView(mButtonRemoveThought);
 
         mThoughtTable.addView(this);
     }
 
-    public void focusThought(Context context) {
+    public void setupDisplayThought(String thought) {
+        TableRow.LayoutParams thoughtRowParams = new TableRow.LayoutParams(
+                TableRow.LayoutParams.MATCH_PARENT,
+                TableRow.LayoutParams.WRAP_CONTENT);
+        this.setLayoutParams(thoughtRowParams);
+
+        mBulletPoint = new TextView(mContext);
+        mBulletPoint.setText("• ");
+
+        mDisplayThought = new TextView(mContext);
+        mDisplayThought.setText(thought);
+
+        addView(mBulletPoint);
+        addView(mDisplayThought);
+
+        mThoughtTable.addView(this);
+
+    }
+
+    public void focusThought() {
         requestFocus();
-        InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(
+        InputMethodManager inputMethodManager = (InputMethodManager) mContext.getSystemService(
                 Context.INPUT_METHOD_SERVICE);
         inputMethodManager.showSoftInput(this, InputMethodManager.SHOW_IMPLICIT);
     }
@@ -84,11 +104,23 @@ public class Thought extends TableRow implements View.OnClickListener {
         table.removeView(this);
     }
 
-    public static void retrieveThought(List<String> list) {
-        for (int currentThought = 0; currentThought < thoughtCount; currentThought++) {
+    public static void retrieveThought(List<String> list, Restaurant restaurant) {
+        if (mThoughtTable == null) {
+            return;
+        }
+
+        for (int currentThought = 0; currentThought < mThoughtTable.getChildCount(); currentThought++) {
             TableRow currentRow = (TableRow)mThoughtTable.getChildAt(currentThought);
             EditText currentEditText = (EditText)currentRow.getChildAt(1);
             list.add(currentEditText.getText().toString());
         }
+
+        JSONObject json = new JSONObject();
+        try {
+            json.put(THOUGHT, new JSONArray(list));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        restaurant.setThoughtList(json.toString());
     }
 }

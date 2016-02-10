@@ -9,12 +9,16 @@
         <include layout="@layout/activity_fragment_container"/>
     </ScrollView>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:background="@drawable/actionbar_clear_gradient"/>
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/activity_add_restaurant_tool_bar"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:minHeight="?attr/actionBarSize"
-        android:background="@drawable/actionbar_clear_gradient"
         android:theme="@style/AppTheme.AppBarOverlay"/>
 
 </FrameLayout>

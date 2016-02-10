@@ -5,7 +5,6 @@ import android.app.Activity;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,15 +12,13 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import com.kevinlamcs.android.restaurando.R;
@@ -39,12 +36,13 @@ import java.util.List;
  * Use the {@link SearchFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SearchFragment extends Fragment {
+public class SearchFragment extends Fragment implements View.OnClickListener{
 
     private static final int TITLE_TEXT_SIZE = 20;
 
     private SearchView mSearchViewTerm;
     private SearchView mSearchViewLocation;
+    private ImageButton mImageButtonDefaultSearch;
 
     private RecyclerView mRecyclerView;
     private List<Restaurant> mRestaurantList = new ArrayList<>();
@@ -67,6 +65,10 @@ public class SearchFragment extends Fragment {
                              Bundle savedInstanceState) {
         mSearchViewLocation = (SearchView) getActivity().findViewById(R.id.search_bottom);
         setupSearchView(mSearchViewLocation, "Nearby");
+
+        mImageButtonDefaultSearch = (ImageButton) getActivity().findViewById(
+                R.id.activity_search_image_button_default_search);
+        mImageButtonDefaultSearch.setOnClickListener(this);
 
         View v = inflater.inflate(R.layout.fragment_search_restaurant_list, container, false);
         mRecyclerView = (RecyclerView) v.findViewById(R.id
@@ -100,6 +102,11 @@ public class SearchFragment extends Fragment {
         super.onDetach();
     }
 
+    @Override
+    public void onClick(View v) {
+        onSearch();
+    }
+
     private void onSearch() {
         String term = mSearchViewTerm.getQuery().toString();
         String location = mSearchViewLocation.getQuery().toString();
@@ -109,7 +116,7 @@ public class SearchFragment extends Fragment {
         } else {
             isSearchNearby = false;
         }
-        new BackgroundYelpSearch().execute(term, location);
+        new BackgroundYelpSearchByLocation().execute(term, location);
     }
 
 
@@ -151,11 +158,11 @@ public class SearchFragment extends Fragment {
         });
     }
 
-    private class BackgroundYelpSearch extends AsyncTask<String, Void, List<Restaurant>> {
+    private class BackgroundYelpSearchByLocation extends AsyncTask<String, Void, List<Restaurant>> {
 
         @Override
         protected List<Restaurant> doInBackground(String... params) {
-            return new YelpSearch().queryYelp(params[0], params[1]);
+            return new YelpSearch().queryYelpByLocation(params[0], params[1]);
         }
 
         @Override

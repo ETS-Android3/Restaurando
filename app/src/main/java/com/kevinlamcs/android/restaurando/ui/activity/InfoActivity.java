@@ -5,17 +5,16 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
 
 import com.kevinlamcs.android.restaurando.R;
-import com.kevinlamcs.android.restaurando.ui.fragment.AddFragment;
+import com.kevinlamcs.android.restaurando.ui.fragment.InfoFragment;
 import com.kevinlamcs.android.restaurando.ui.activity.root.SingleFragmentActivity;
 
 /**
- * Created by kevin-lam on 1/16/16.
+ * Created by kevin-lam on 1/24/16.
  */
-public class AddActivity extends SingleFragmentActivity {
-
+public class InfoActivity extends SingleFragmentActivity {
     @Override
     protected Fragment createFragment() {
-        return AddFragment.newInstance();
+        return InfoFragment.newInstance();
     }
 
     @Override

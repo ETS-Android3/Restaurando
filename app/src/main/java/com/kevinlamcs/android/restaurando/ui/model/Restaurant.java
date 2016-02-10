@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class Restaurant implements Parcelable {
     private String mName;
+    private String mId;
     private String mDisplayPhone;
     private String mStreetAddress;
     private String mCityStateZip;
@@ -19,26 +20,49 @@ public class Restaurant implements Parcelable {
     private float mDistance;
     private String mUrl;
     private String mImageUrl;
-
-    private List<String> mThoughtsList = new ArrayList<>();
+    private String mCategory;
+    private String mCategoryId;
+    private String mThoughtList;
+    private boolean mIsSelectedForRandom;
 
     public Restaurant() {
     }
 
     public Restaurant(Parcel source) {
-        String[] stringMembers = new String[8];
+        String[] stringMembers = new String[11];
 
         source.readStringArray(stringMembers);
         mName = stringMembers[0];
-        mDisplayPhone = stringMembers[1];
-        mStreetAddress = stringMembers[2];
-        mCityStateZip = stringMembers[3];
-        mRating = stringMembers[4];
-        mReviewCount = stringMembers[5];
-        mUrl = stringMembers[6];
-        mImageUrl = stringMembers[7];
+        mId = stringMembers[1];
+        mDisplayPhone = stringMembers[2];
+        mStreetAddress = stringMembers[3];
+        mCityStateZip = stringMembers[4];
+        mRating = stringMembers[5];
+        mCategory = stringMembers[6];
+        mReviewCount = stringMembers[7];
+        mUrl = stringMembers[8];
+        mImageUrl = stringMembers[9];
+        mThoughtList = stringMembers[10];
         mDistance = source.readFloat();
-        source.readStringList(mThoughtsList);
+        mIsSelectedForRandom = source.readByte() != 0;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object == null) {
+            return false;
+        }
+        if (!Restaurant.class.isAssignableFrom(object.getClass())) {
+            return false;
+        }
+        Restaurant restaurant = (Restaurant) object;
+
+        return this.mId.equals(restaurant.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return 23 + (this.mId != null ? this.mId.hashCode() : 0);
     }
 
     public String getName() {
@@ -49,12 +73,12 @@ public class Restaurant implements Parcelable {
         mName = name;
     }
 
-    public String getDisplayPhone() {
-        return mDisplayPhone;
+    public String getId() {
+        return mId;
     }
 
-    public void setDisplayPhone(String displayPhone) {
-        mDisplayPhone = displayPhone;
+    public void setId(String id) {
+        mId = id;
     }
 
     public String getRating() {
@@ -73,20 +97,20 @@ public class Restaurant implements Parcelable {
         mReviewCount = reviewCount;
     }
 
-    public float getDistance() {
-        return mDistance;
+    public String getCategory() {
+        return mCategory;
     }
 
-    public void setDistance(float distance) {
-        mDistance = distance;
+    public void setCategory(String category) {
+        mCategory = category;
     }
 
-    public String getUrl() {
-        return mUrl;
+    public String getCategoryId() {
+        return mCategoryId;
     }
 
-    public void setUrl(String url) {
-        mUrl = url;
+    public void setCategoryId(String categoryId) {
+        mCategoryId = categoryId;
     }
 
     public String getCityStateZip() {
@@ -113,12 +137,20 @@ public class Restaurant implements Parcelable {
         mImageUrl = imageUrl;
     }
 
-    public List<String> getThoughtsList() {
-        return mThoughtsList;
+    public String getThoughtList() {
+        return mThoughtList;
     }
 
-    public void setThoughtsList(List<String> thoughtsList) {
-        mThoughtsList = thoughtsList;
+    public void setThoughtList(String thoughtList) {
+        mThoughtList = thoughtList;
+    }
+
+    public boolean isSelectedForRandom() {
+        return mIsSelectedForRandom;
+    }
+
+    public void setIsSelectedForRandom(boolean isSelectedForRandom) {
+        mIsSelectedForRandom = isSelectedForRandom;
     }
 
     @Override
@@ -128,17 +160,19 @@ public class Restaurant implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeStringArray(new String[]{this.mName, this.mDisplayPhone, this.mStreetAddress,
-                this.mCityStateZip, this.mRating, this.mReviewCount, this.mUrl, this.mImageUrl});
+        dest.writeStringArray(new String[]{
+                this.mName, this.mId, this.mDisplayPhone, this.mStreetAddress, this.mCityStateZip,
+                this.mRating, this.mCategory, this.mReviewCount, this.mUrl, this.mImageUrl,
+                this.mThoughtList});
         dest.writeFloat(mDistance);
-        dest.writeStringList(mThoughtsList);
+        dest.writeByte((byte)(this.mIsSelectedForRandom ? 1 : 0));
     }
 
     public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
 
         @Override
-        public Restaurant createFromParcel(Parcel source) {
-            return new Restaurant(source);
+        public Restaurant createFromParcel(Parcel in) {
+            return new Restaurant(in);
         }
 
         @Override

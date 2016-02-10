@@ -1,14 +1,14 @@
 package com.kevinlamcs.android.restaurando.ui.activity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.KeyEvent;
 
 import com.kevinlamcs.android.restaurando.R;
 import com.kevinlamcs.android.restaurando.ui.fragment.SearchFragment;
-import com.kevinlamcs.android.restaurando.ui.fragment.root.SingleFragmentActivity;
+import com.kevinlamcs.android.restaurando.ui.activity.root.SingleFragmentActivity;
 import com.kevinlamcs.android.restaurando.utils.LocationUtils;
 
 public class SearchActivity extends SingleFragmentActivity {
@@ -37,5 +37,14 @@ public class SearchActivity extends SingleFragmentActivity {
     protected void onPause() {
         super.onPause();
         LocationUtils.endGPS(getApplicationContext());
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if ((requestCode == FavoritesActivity.REQUEST_RESTAURANT) &&
+                (resultCode == Activity.RESULT_OK)) {
+            setResult(Activity.RESULT_OK, data);
+            finish();
+        }
     }
 }

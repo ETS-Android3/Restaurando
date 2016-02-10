@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/button_tool_tip_custom"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:textColor="@color/colorWhite"
+    app:backgroundTint="#E6616161"
+    android:visibility="invisible"
+    tools:text="Tooltip text"/>

@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp"
-            android:textSize="30sp"
+            android:layout_marginBottom="20dp"
+            android:textSize="34sp"
             tools:text="Phuong Trang"/>
         <TextView
             android:id="@+id/fragment_add_restaurant_rating"

@@ -1,4 +1,4 @@
-package com.kevinlamcs.android.restaurando.ui.fragment.root;
+package com.kevinlamcs.android.restaurando.ui.activity.root;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

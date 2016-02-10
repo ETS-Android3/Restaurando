@@ -32,6 +32,7 @@ public class YelpSearch {
     private static final String DEFAULT_TERM="Restaurant";
     private static final String DEFAULT_CATEGORY="food,restaurants";
     private static final String SEARCH_PATH="/v2/search";
+    private static final String BUSINESS_PATH="/v2/business";
 
     private static final String CONSUMER_KEY="VMnPW80yap0Soj7331tpXA";
     private static final String CONSUMER_SECRET="QWs9PA2QuG8t_foYHUMW8FJywAg";
@@ -64,6 +65,11 @@ public class YelpSearch {
         return sendRequestAndGetResponse(request);
     }
 
+    public String searchByBusinessId(String businessId) {
+        OAuthRequest request = createOAuthRequest(BUSINESS_PATH + "/" + businessId);
+        return sendRequestAndGetResponse(request);
+    }
+
     public OAuthRequest createOAuthRequest(String path) {
         OAuthRequest request = new OAuthRequest(Verb.GET, "http://" + API_HOST + path);
         return request;
@@ -72,11 +78,12 @@ public class YelpSearch {
     private String sendRequestAndGetResponse(OAuthRequest request) {
         Log.i(TAG, "Querying " + request.getCompleteUrl() + " ...");
         mService.signRequest(mAccessToken, request);
-        Log.i(TAG, "Request " + mService.toString() + " ...");Response response = request.send();
+        Log.i(TAG, "Request " + mService.toString() + " ...");
+        Response response = request.send();
         return response.getBody();
     }
 
-    public List<Restaurant> queryYelp(String term, String location) {
+    public List<Restaurant> queryYelpByLocation(String term, String location) {
         List<Restaurant> restaurantList = new ArrayList<>();
 
         String searchResponseJson = searchForBusinessesByLocation(term, location, DEFAULT_CATEGORY);
@@ -88,9 +95,11 @@ public class YelpSearch {
         for (Yelp.Businesses business : yelp.businesses) {
             Restaurant restaurant = new Restaurant();
             restaurant.setName(business.name);
+            restaurant.setId(business.id);
             if (business.location.address.size() != 0) {
                 restaurant.setStreetAddress(business.location.address.get(0));
             }
+            restaurant.setCategory((business.categories.get(0).get(0)));
             restaurant.setCityStateZip(business.location.city + ", " + business.location.state_code
                     + " " + business.location.postal_code);
             restaurant.setRating(business.rating);
@@ -103,5 +112,29 @@ public class YelpSearch {
         }
 
         return restaurantList;
+    }
+
+    public Restaurant queryYelpByBusiness(String businessId) {
+        String searchResponseJson = searchByBusinessId(businessId);
+        Gson gson = new GsonBuilder().create();
+        Yelp.Businesses business = gson.fromJson(searchResponseJson, Yelp.Businesses.class);
+
+        Restaurant restaurant = new Restaurant();
+        restaurant.setName(business.name);
+        restaurant.setId(business.id);
+        if (business.location.address.size() != 0) {
+            restaurant.setStreetAddress(business.location.address.get(0));
+        }
+        restaurant.setCategory((business.categories.get(0).get(0)));
+        restaurant.setCityStateZip(business.location.city + ", " + business.location.state_code
+                + " " + business.location.postal_code);
+        restaurant.setRating(business.rating);
+        restaurant.setReviewCount(business.review_count);
+        String largeImage = StringManipulationUtils.replaceImageUrlSize
+                (business.image_url);
+        restaurant.setImageUrl(largeImage);
+        Log.i(TAG, "This is large image url " + largeImage);
+
+        return restaurant;
     }
 }

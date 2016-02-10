@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.kevinlamcs.android.restaurando.R;
 import com.kevinlamcs.android.restaurando.ui.activity.AddActivity;
+import com.kevinlamcs.android.restaurando.ui.activity.FavoritesActivity;
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
 
 import java.util.List;
@@ -76,9 +77,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchRest
         public void onClick(View v) {
             Intent intent = new Intent(v.getContext(), AddActivity.class);
             intent.putExtra(EXTRA_YELP_RESTAURANT, mRestaurant);
-            intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
-            v.getContext().startActivity(intent);
-            ((Activity)v.getContext()).finish();
+            ((Activity)v.getContext()).startActivityForResult(intent, FavoritesActivity.REQUEST_RESTAURANT);
         }
 
         private void bindSearchRestaurant(Restaurant restaurant) {

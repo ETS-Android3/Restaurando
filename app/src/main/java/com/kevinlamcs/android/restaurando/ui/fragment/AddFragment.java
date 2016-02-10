@@ -1,16 +1,12 @@
 package com.kevinlamcs.android.restaurando.ui.fragment;
 
-import android.app.ActionBar;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -18,17 +14,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.kevinlamcs.android.restaurando.R;
-import com.kevinlamcs.android.restaurando.ui.activity.FavoritesActivity;
 import com.kevinlamcs.android.restaurando.ui.adapter.SearchAdapter;
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
 import com.kevinlamcs.android.restaurando.ui.model.Thought;
@@ -37,7 +28,6 @@ import com.kevinlamcs.android.restaurando.utils.BitmapUtils;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.Inflater;
 
 
 /**
@@ -51,7 +41,7 @@ public class AddFragment extends Fragment {
     private Restaurant mRestaurant;
     private TableLayout mTableLayout;
 
-    private Bitmap mScaledBitmap;
+    private static Bitmap mScaledBitmap;
 
     public static AddFragment newInstance() {
         AddFragment fragment = new AddFragment();
@@ -71,8 +61,8 @@ public class AddFragment extends Fragment {
         mRestaurant = getActivity().getIntent().getParcelableExtra(SearchAdapter
                 .EXTRA_YELP_RESTAURANT);
 
-        new BackgroundDownloadImage((ImageView)v.findViewById(R.id.fragment_add_restaurant_image)
-        ).execute(mRestaurant.getImageUrl());
+        new BackgroundDownloadImage(getActivity(), (ImageView)v.findViewById(
+                R.id.fragment_add_restaurant_image)).execute(mRestaurant.getImageUrl());
 
         TextView name = (TextView) v.findViewById(R.id.fragment_add_restaurant_name);
         TextView rating = (TextView) v.findViewById(R.id.fragment_add_restaurant_rating);
@@ -95,7 +85,8 @@ public class AddFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Thought thought = new Thought(getContext(), mTableLayout);
-                thought.focusThought(getContext());
+                thought.setupAddThought();
+                thought.focusThought();
             }
         });
         return v;
@@ -111,14 +102,17 @@ public class AddFragment extends Fragment {
         switch (item.getItemId()) {
             case R.id.add_done_check:
                 List<String> thoughtList = new ArrayList<>();
-                Thought.retrieveThought(thoughtList);
-                mRestaurant.setThoughtsList(thoughtList);
+                Thought.retrieveThought(thoughtList, mRestaurant);
 
                 Intent data = new Intent();
                 data.putExtra(EXTRA_MY_RESTAURANT, mRestaurant);
                 getActivity().setResult(Activity.RESULT_OK, data);
                 getActivity().finish();
                 break;
+            case android.R.id.home:
+                getActivity().finish();
+            default:
+                return false;
         }
         return true;
     }
@@ -128,13 +122,16 @@ public class AddFragment extends Fragment {
         super.onPause();
         mScaledBitmap.recycle();
         mScaledBitmap = null;
+        mTableLayout.removeAllViews();
     }
 
-    private class BackgroundDownloadImage extends AsyncTask<String, Void, Bitmap> {
+    public static class BackgroundDownloadImage extends AsyncTask<String, Void, Bitmap> {
         private ImageView mImageView;
+        private Activity mActivity;
 
-        public BackgroundDownloadImage(ImageView imageView) {
+        public BackgroundDownloadImage(Activity activity, ImageView imageView) {
             mImageView = imageView;
+            mActivity = activity;
         }
 
         @Override
@@ -143,7 +140,7 @@ public class AddFragment extends Fragment {
             try {
                 InputStream in = new java.net.URL(url).openStream();
                 Bitmap defaultBitmap = BitmapFactory.decodeStream(in);
-                mScaledBitmap = BitmapUtils.scaleBitmap(defaultBitmap, getActivity());
+                mScaledBitmap = BitmapUtils.scaleBitmap(defaultBitmap, mActivity);
                 defaultBitmap.recycle();
                 defaultBitmap = null;
             } catch (Exception e) {
