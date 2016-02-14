@@ -6,33 +6,21 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="435221ab-9d35-4f19-a938-63138934f314" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DialogCategoryFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantCursorWrapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/root/SingleFragmentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/root/SingleFragmentActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/AddActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/AddActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/SearchActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/SearchActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/SearchAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/SearchAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/SearchFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/SearchFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Thought.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Thought.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/actionbar_clear_gradient.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/actionbar_clear_gradient.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/coordinator_favorites.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/coordinator_favorites.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/favorites.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/favorites.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_restaurant.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_restaurant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_favorites.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_favorites.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Restaurando.iws" />
@@ -86,8 +74,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-              <folding />
+              <caret line="161" column="34" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,88 +86,43 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+              <caret line="108" column="34" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2498#2499#0" expanded="true" />
-                <element signature="e#2543#2544#0" expanded="true" />
+                <element signature="e#6434#6435#0" expanded="true" />
+                <element signature="e#6489#6490#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/SearchActivity.java">
+      <file leaf-file-name="favorites.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/favorites.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Restaurant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java">
+      <file leaf-file-name="search_view_suggestions_list_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_view_suggestions_list_item.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
-              <folding>
-                <element signature="e#1763#1764#0" expanded="true" />
-                <element signature="e#1835#1836#0" expanded="true" />
-                <element signature="e#4274#4275#0" expanded="true" />
-                <element signature="e#4323#4324#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Thought.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Thought.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilterOptions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/SearchAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoritesFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FavoritesFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22673436">
-              <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,13 +130,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FavoritesActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FavoritesActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.6807817">
+              <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+              <folding>
+                <element signature="e#6753#6924#0" expanded="true" />
+                <element signature="e#6923#6924#0" expanded="true" />
+                <element signature="e#6965#7172#0" expanded="true" />
+                <element signature="e#7171#7172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurantListing.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="154" column="59" selection-start-line="154" selection-start-column="59" selection-end-line="154" selection-end-column="59" />
+              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurantCursorWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantCursorWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurantDbSchema.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantDbSchema.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_filter.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -202,6 +195,9 @@
       <list>
         <option value="resourceFile" />
         <option value="Class" />
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -1668,19 +1664,37 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FilterActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/filter.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DialogCategoryFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/widget/MenuDropDown.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner_drop_down_display.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_drop_down_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/search_view_bottom_toolbar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/search_view_favorites.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/coordinator_favorites.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/favorites.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/search_view_suggestions_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantCursorWrapper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -1715,8 +1729,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1733,6 +1749,42 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1985,8 +2037,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2205,35 +2255,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4573269" sideWeight="0.49402392" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4573269" sideWeight="0.49083665" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4573269" sideWeight="0.5059761" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60225445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4573269" sideWeight="0.5091633" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="165" y="252" width="1101" height="544" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="65" y="52" width="1301" height="716" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60225445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2254,19 +2304,19 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java</url>
-          <line>66</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java</url>
-          <line>73</line>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java</url>
-          <line>88</line>
+          <line>115</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
@@ -2283,62 +2333,56 @@
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java</url>
-          <line>49</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java</url>
-          <line>58</line>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java</url>
-          <line>130</line>
+          <line>166</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java</url>
-          <line>59</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java</url>
-          <line>66</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java</url>
-          <line>87</line>
+          <line>90</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java</url>
-          <line>230</line>
+          <line>236</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java</url>
-          <line>262</line>
+          <line>268</line>
           <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java</url>
-          <line>238</line>
+          <line>244</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
@@ -2348,155 +2392,27 @@
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/widget/MenuDropDown.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/widget/MenuDropDown.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="77" />
+      <option name="time" value="92" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Tools/Android-SDK/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5216" column="0" selection-start-line="5216" selection-start-column="0" selection-end-line="5216" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="61" selection-start-line="161" selection-start-column="61" selection-end-line="161" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FilterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="59" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/InfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="89" selection-start-line="155" selection-start-column="89" selection-end-line="155" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2498#2499#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fragment_container.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="59" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DialogCategoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/InfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/SearchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2504,51 +2420,306 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantDbSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantCursorWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fragment_container.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.16129">
-          <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/AddActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="62" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Tools/Android-SDK/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5216" column="0" selection-start-line="5216" selection-start-column="0" selection-end-line="5216" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#443008#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#18984#18985#0" expanded="false" />
+            <element signature="e#19019#19020#0" expanded="false" />
+            <element signature="e#19093#19094#0" expanded="false" />
+            <element signature="e#19132#19133#0" expanded="false" />
+            <element signature="e#25517#25518#0" expanded="false" />
+            <element signature="e#25589#25590#0" expanded="false" />
+            <element signature="e#25858#25859#0" expanded="false" />
+            <element signature="e#25933#25934#0" expanded="false" />
+            <element signature="e#26324#26325#0" expanded="false" />
+            <element signature="e#26399#26400#0" expanded="false" />
+            <element signature="e#26794#26795#0" expanded="false" />
+            <element signature="e#26860#26861#0" expanded="false" />
+            <element signature="e#30697#30698#0" expanded="false" />
+            <element signature="e#30747#30748#0" expanded="false" />
+            <element signature="e#31670#31671#0" expanded="false" />
+            <element signature="e#31720#31721#0" expanded="false" />
+            <element signature="e#32655#32656#0" expanded="false" />
+            <element signature="e#32699#32700#0" expanded="false" />
+            <element signature="e#32887#32888#0" expanded="false" />
+            <element signature="e#32923#32924#0" expanded="false" />
+            <element signature="e#38354#38355#0" expanded="false" />
+            <element signature="e#38385#38386#0" expanded="false" />
+            <element signature="e#38916#38917#0" expanded="false" />
+            <element signature="e#38960#38961#0" expanded="false" />
+            <element signature="e#45926#45927#0" expanded="false" />
+            <element signature="e#45956#45957#0" expanded="false" />
+            <element signature="e#46416#46417#0" expanded="false" />
+            <element signature="e#46470#46471#0" expanded="false" />
+            <element signature="e#47008#47009#0" expanded="false" />
+            <element signature="e#47059#47060#0" expanded="false" />
+            <element signature="e#48055#48056#0" expanded="false" />
+            <element signature="e#48103#48104#0" expanded="false" />
+            <element signature="e#48339#48340#0" expanded="false" />
+            <element signature="e#48374#48375#0" expanded="false" />
+            <element signature="e#50761#50762#0" expanded="false" />
+            <element signature="e#50805#50806#0" expanded="false" />
+            <element signature="e#52948#52949#0" expanded="false" />
+            <element signature="e#52990#52991#0" expanded="false" />
+            <element signature="e#70614#70615#0" expanded="false" />
+            <element signature="e#70650#70651#0" expanded="false" />
+            <element signature="e#74210#74211#0" expanded="false" />
+            <element signature="e#74250#74251#0" expanded="false" />
+            <element signature="e#74452#74453#0" expanded="false" />
+            <element signature="e#74492#74493#0" expanded="false" />
+            <element signature="e#79336#79337#0" expanded="false" />
+            <element signature="e#79406#79407#0" expanded="false" />
+            <element signature="e#82964#82965#0" expanded="false" />
+            <element signature="e#82998#82999#0" expanded="false" />
+            <element signature="e#104531#104532#0" expanded="false" />
+            <element signature="e#104572#104573#0" expanded="false" />
+            <element signature="e#106780#106781#0" expanded="false" />
+            <element signature="e#106829#106830#0" expanded="false" />
+            <element signature="e#108540#108541#0" expanded="false" />
+            <element signature="e#108576#108577#0" expanded="false" />
+            <element signature="e#129330#129331#0" expanded="false" />
+            <element signature="e#129403#129404#0" expanded="false" />
+            <element signature="e#138183#138184#0" expanded="false" />
+            <element signature="e#138236#138237#0" expanded="false" />
+            <element signature="e#159921#159922#0" expanded="false" />
+            <element signature="e#159973#159974#0" expanded="false" />
+            <element signature="e#166100#166101#0" expanded="false" />
+            <element signature="e#166138#166139#0" expanded="false" />
+            <element signature="e#167836#167837#0" expanded="false" />
+            <element signature="e#167874#167875#0" expanded="false" />
+            <element signature="e#167899#167900#0" expanded="false" />
+            <element signature="e#167937#167938#0" expanded="false" />
+            <element signature="e#171840#171841#0" expanded="false" />
+            <element signature="e#171897#171898#0" expanded="false" />
+            <element signature="e#178625#178626#0" expanded="false" />
+            <element signature="e#178691#178692#0" expanded="false" />
+            <element signature="e#196829#196830#0" expanded="false" />
+            <element signature="e#196881#196882#0" expanded="false" />
+            <element signature="e#196923#196924#0" expanded="false" />
+            <element signature="e#196988#196989#0" expanded="false" />
+            <element signature="e#221539#221540#0" expanded="false" />
+            <element signature="e#221571#221572#0" expanded="false" />
+            <element signature="e#222676#222677#0" expanded="false" />
+            <element signature="e#222712#222713#0" expanded="false" />
+            <element signature="e#223352#223353#0" expanded="false" />
+            <element signature="e#223396#223397#0" expanded="false" />
+            <element signature="e#227025#227026#0" expanded="false" />
+            <element signature="e#227061#227062#0" expanded="false" />
+            <element signature="e#228367#228368#0" expanded="false" />
+            <element signature="e#228424#228425#0" expanded="false" />
+            <element signature="e#232408#232409#0" expanded="false" />
+            <element signature="e#232459#232460#0" expanded="false" />
+            <element signature="e#247091#247092#0" expanded="false" />
+            <element signature="e#247127#247128#0" expanded="false" />
+            <element signature="e#247793#247794#0" expanded="false" />
+            <element signature="e#247843#247844#0" expanded="false" />
+            <element signature="e#256311#256312#0" expanded="false" />
+            <element signature="e#256352#256353#0" expanded="false" />
+            <element signature="e#259143#259144#0" expanded="false" />
+            <element signature="e#259175#259176#0" expanded="false" />
+            <element signature="e#260045#260046#0" expanded="false" />
+            <element signature="e#260077#260078#0" expanded="false" />
+            <element signature="e#260371#260372#0" expanded="false" />
+            <element signature="e#260407#260408#0" expanded="false" />
+            <element signature="e#260695#260696#0" expanded="false" />
+            <element signature="e#260731#260732#0" expanded="false" />
+            <element signature="e#263185#263186#0" expanded="false" />
+            <element signature="e#263260#263261#0" expanded="false" />
+            <element signature="e#264572#264573#0" expanded="false" />
+            <element signature="e#264626#264627#0" expanded="false" />
+            <element signature="e#265532#265533#0" expanded="false" />
+            <element signature="e#265586#265587#0" expanded="false" />
+            <element signature="e#265926#265927#0" expanded="false" />
+            <element signature="e#265968#265969#0" expanded="false" />
+            <element signature="e#266365#266366#0" expanded="false" />
+            <element signature="e#266420#266421#0" expanded="false" />
+            <element signature="e#269697#269698#0" expanded="false" />
+            <element signature="e#269751#269752#0" expanded="false" />
+            <element signature="e#271144#271145#0" expanded="false" />
+            <element signature="e#271177#271178#0" expanded="false" />
+            <element signature="e#275209#275210#0" expanded="false" />
+            <element signature="e#275277#275278#0" expanded="false" />
+            <element signature="e#277447#277448#0" expanded="false" />
+            <element signature="e#277492#277493#0" expanded="false" />
+            <element signature="e#281187#281188#0" expanded="false" />
+            <element signature="e#281270#281271#0" expanded="false" />
+            <element signature="e#281431#281432#0" expanded="false" />
+            <element signature="e#281515#281516#0" expanded="false" />
+            <element signature="e#283377#283378#0" expanded="false" />
+            <element signature="e#283458#283459#0" expanded="false" />
+            <element signature="e#283726#283727#0" expanded="false" />
+            <element signature="e#283806#283807#0" expanded="false" />
+            <element signature="e#306991#306992#0" expanded="false" />
+            <element signature="e#307026#307027#0" expanded="false" />
+            <element signature="e#317071#317072#0" expanded="false" />
+            <element signature="e#317103#317104#0" expanded="false" />
+            <element signature="e#317658#317659#0" expanded="false" />
+            <element signature="e#317690#317691#0" expanded="false" />
+            <element signature="e#318260#318261#0" expanded="false" />
+            <element signature="e#318292#318293#0" expanded="false" />
+            <element signature="e#318803#318804#0" expanded="false" />
+            <element signature="e#318835#318836#0" expanded="false" />
+            <element signature="e#319382#319383#0" expanded="false" />
+            <element signature="e#319414#319415#0" expanded="false" />
+            <element signature="e#319976#319977#0" expanded="false" />
+            <element signature="e#320008#320009#0" expanded="false" />
+            <element signature="e#321462#321463#0" expanded="false" />
+            <element signature="e#321534#321535#0" expanded="false" />
+            <element signature="e#321674#321675#0" expanded="false" />
+            <element signature="e#321747#321748#0" expanded="false" />
+            <element signature="e#322469#322470#0" expanded="false" />
+            <element signature="e#322504#322505#0" expanded="false" />
+            <element signature="e#331190#331191#0" expanded="false" />
+            <element signature="e#331247#331248#0" expanded="false" />
+            <element signature="e#334587#334588#0" expanded="false" />
+            <element signature="e#334623#334624#0" expanded="false" />
+            <element signature="e#341232#341233#0" expanded="false" />
+            <element signature="e#341273#341274#0" expanded="false" />
+            <element signature="e#347048#347049#0" expanded="false" />
+            <element signature="e#347084#347085#0" expanded="false" />
+            <element signature="e#358242#358243#0" expanded="false" />
+            <element signature="e#358300#358301#0" expanded="false" />
+            <element signature="e#362563#362564#0" expanded="false" />
+            <element signature="e#362606#362607#0" expanded="false" />
+            <element signature="e#362856#362857#0" expanded="false" />
+            <element signature="e#362894#362895#0" expanded="false" />
+            <element signature="e#363017#363018#0" expanded="false" />
+            <element signature="e#363061#363062#0" expanded="false" />
+            <element signature="e#363090#363091#0" expanded="false" />
+            <element signature="e#363144#363145#0" expanded="false" />
+            <element signature="e#363170#363171#0" expanded="false" />
+            <element signature="e#363227#363228#0" expanded="false" />
+            <element signature="e#363269#363270#0" expanded="false" />
+            <element signature="e#363340#363341#0" expanded="false" />
+            <element signature="e#363385#363386#0" expanded="false" />
+            <element signature="e#363452#363453#0" expanded="false" />
+            <element signature="e#363489#363490#0" expanded="false" />
+            <element signature="e#363549#363550#0" expanded="false" />
+            <element signature="e#363580#363581#0" expanded="false" />
+            <element signature="e#363634#363635#0" expanded="false" />
+            <element signature="e#363835#363836#0" expanded="false" />
+            <element signature="e#363894#363895#0" expanded="false" />
+            <element signature="e#363927#363928#0" expanded="false" />
+            <element signature="e#363985#363986#0" expanded="false" />
+            <element signature="e#364014#364015#0" expanded="false" />
+            <element signature="e#364071#364072#0" expanded="false" />
+            <element signature="e#364102#364103#0" expanded="false" />
+            <element signature="e#364161#364162#0" expanded="false" />
+            <element signature="e#364208#364209#0" expanded="false" />
+            <element signature="e#364260#364261#0" expanded="false" />
+            <element signature="e#364295#364296#0" expanded="false" />
+            <element signature="e#364359#364360#0" expanded="false" />
+            <element signature="e#364542#364543#0" expanded="false" />
+            <element signature="e#364608#364609#0" expanded="false" />
+            <element signature="e#364644#364645#0" expanded="false" />
+            <element signature="e#364683#364684#0" expanded="false" />
+            <element signature="e#370575#370576#0" expanded="false" />
+            <element signature="e#370641#370642#0" expanded="false" />
+            <element signature="e#371030#371031#0" expanded="false" />
+            <element signature="e#371088#371089#0" expanded="false" />
+            <element signature="e#371992#371993#0" expanded="false" />
+            <element signature="e#372048#372049#0" expanded="false" />
+            <element signature="e#374006#374007#0" expanded="false" />
+            <element signature="e#374045#374046#0" expanded="false" />
+            <element signature="e#374099#374100#0" expanded="false" />
+            <element signature="e#374143#374144#0" expanded="false" />
+            <element signature="e#374201#374202#0" expanded="false" />
+            <element signature="e#374238#374239#0" expanded="false" />
+            <element signature="e#374300#374301#0" expanded="false" />
+            <element signature="e#374337#374338#0" expanded="false" />
+            <element signature="e#374389#374390#0" expanded="false" />
+            <element signature="e#374451#374452#0" expanded="false" />
+            <element signature="e#374744#374745#0" expanded="false" />
+            <element signature="e#374800#374801#0" expanded="false" />
+            <element signature="e#375091#375092#0" expanded="false" />
+            <element signature="e#375145#375146#0" expanded="false" />
+            <element signature="e#375585#375586#0" expanded="false" />
+            <element signature="e#375639#375640#0" expanded="false" />
+            <element signature="e#376059#376060#0" expanded="false" />
+            <element signature="e#376113#376114#0" expanded="false" />
+            <element signature="e#376274#376275#0" expanded="false" />
+            <element signature="e#376330#376331#0" expanded="false" />
+            <element signature="e#376632#376633#0" expanded="false" />
+            <element signature="e#376694#376695#0" expanded="false" />
+            <element signature="e#377131#377132#0" expanded="false" />
+            <element signature="e#377194#377195#0" expanded="false" />
+            <element signature="e#378865#378866#0" expanded="false" />
+            <element signature="e#378924#378925#0" expanded="false" />
+            <element signature="e#380312#380313#0" expanded="false" />
+            <element signature="e#380368#380369#0" expanded="false" />
+            <element signature="e#380618#380619#0" expanded="false" />
+            <element signature="e#380663#380664#0" expanded="false" />
+            <element signature="e#381937#381938#0" expanded="false" />
+            <element signature="e#381986#381987#0" expanded="false" />
+            <element signature="e#382111#382112#0" expanded="false" />
+            <element signature="e#382150#382151#0" expanded="false" />
+            <element signature="e#382414#382415#0" expanded="false" />
+            <element signature="e#382460#382461#0" expanded="false" />
+            <element signature="e#384247#384248#0" expanded="false" />
+            <element signature="e#384315#384316#0" expanded="false" />
+            <element signature="e#388164#388165#0" expanded="false" />
+            <element signature="e#388234#388235#0" expanded="false" />
+            <element signature="e#388518#388519#0" expanded="false" />
+            <element signature="e#388578#388579#0" expanded="false" />
+            <element signature="e#390147#390148#0" expanded="false" />
+            <element signature="e#390211#390212#0" expanded="false" />
+            <element signature="e#390250#390251#0" expanded="false" />
+            <element signature="e#390309#390310#0" expanded="false" />
+            <element signature="e#392308#392309#0" expanded="false" />
+            <element signature="e#392350#392351#0" expanded="false" />
+            <element signature="e#392497#392498#0" expanded="false" />
+            <element signature="e#392539#392540#0" expanded="false" />
+            <element signature="e#392692#392693#0" expanded="false" />
+            <element signature="e#392740#392741#0" expanded="false" />
+            <element signature="e#392930#392931#0" expanded="false" />
+            <element signature="e#392982#392983#0" expanded="false" />
+            <element signature="e#394267#394268#0" expanded="false" />
+            <element signature="e#394319#394320#0" expanded="false" />
+            <element signature="e#397580#397581#0" expanded="false" />
+            <element signature="e#397621#397622#0" expanded="false" />
+            <element signature="e#397858#397859#0" expanded="false" />
+            <element signature="e#397915#397916#0" expanded="false" />
+            <element signature="e#398122#398123#0" expanded="false" />
+            <element signature="e#398179#398180#0" expanded="false" />
+            <element signature="e#398255#398256#0" expanded="false" />
+            <element signature="e#398314#398315#0" expanded="false" />
+            <element signature="e#400185#400186#0" expanded="false" />
+            <element signature="e#400228#400229#0" expanded="false" />
+            <element signature="e#400566#400567#0" expanded="false" />
+            <element signature="e#400621#400622#0" expanded="false" />
+            <element signature="e#400947#400948#0" expanded="false" />
+            <element signature="e#400998#400999#0" expanded="false" />
+            <element signature="e#402971#402972#0" expanded="false" />
+            <element signature="e#403017#403018#0" expanded="false" />
+            <element signature="e#403574#403575#0" expanded="false" />
+            <element signature="e#403622#403623#0" expanded="false" />
+            <element signature="e#411552#411553#0" expanded="false" />
+            <element signature="e#411596#411597#0" expanded="false" />
+            <element signature="e#411807#411808#0" expanded="false" />
+            <element signature="e#411859#411860#0" expanded="false" />
+            <element signature="e#412054#412055#0" expanded="false" />
+            <element signature="e#412097#412098#0" expanded="false" />
+            <element signature="e#412303#412304#0" expanded="false" />
+            <element signature="e#412353#412354#0" expanded="false" />
+            <element signature="e#412557#412558#0" expanded="false" />
+            <element signature="e#412603#412604#0" expanded="false" />
+            <element signature="e#412824#412825#0" expanded="false" />
+            <element signature="e#412880#412881#0" expanded="false" />
+            <element signature="e#413084#413085#0" expanded="false" />
+            <element signature="e#413130#413131#0" expanded="false" />
+            <element signature="e#413351#413352#0" expanded="false" />
+            <element signature="e#413407#413408#0" expanded="false" />
+            <element signature="e#413821#413822#0" expanded="false" />
+            <element signature="e#413865#413866#0" expanded="false" />
+            <element signature="e#436762#436763#0" expanded="false" />
+            <element signature="e#436797#436798#0" expanded="false" />
+            <element signature="e#437752#437753#0" expanded="false" />
+            <element signature="e#437803#437804#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2562,13 +2733,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/filter.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/remove_thought.png">
@@ -2590,27 +2754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/SearchFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/favorites.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/InfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2639,37 +2782,124 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2005" column="0" selection-start-line="2005" selection-start-column="0" selection-end-line="2005" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DialogCategoryFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FilterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="154" column="59" selection-start-line="154" selection-start-column="59" selection-end-line="154" selection-end-column="59" />
-          <folding />
+          <folding>
+            <element signature="e#0#85877#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4155#4156#0" expanded="false" />
+            <element signature="e#4179#4180#0" expanded="false" />
+            <element signature="e#4821#4822#0" expanded="false" />
+            <element signature="e#4873#4874#0" expanded="false" />
+            <element signature="e#4934#4935#0" expanded="false" />
+            <element signature="e#4988#4989#0" expanded="false" />
+            <element signature="e#11337#11338#0" expanded="false" />
+            <element signature="e#11375#11376#0" expanded="false" />
+            <element signature="e#11648#11649#0" expanded="false" />
+            <element signature="e#11680#11681#0" expanded="false" />
+            <element signature="e#11759#11760#0" expanded="false" />
+            <element signature="e#11807#11808#0" expanded="false" />
+            <element signature="e#12014#12015#0" expanded="false" />
+            <element signature="e#12077#12078#0" expanded="false" />
+            <element signature="e#12153#12154#0" expanded="false" />
+            <element signature="e#12212#12213#0" expanded="false" />
+            <element signature="e#12507#12508#0" expanded="false" />
+            <element signature="e#12548#12549#0" expanded="false" />
+            <element signature="e#17731#17732#0" expanded="false" />
+            <element signature="e#17775#17776#0" expanded="false" />
+            <element signature="e#17891#17892#0" expanded="false" />
+            <element signature="e#17929#17930#0" expanded="false" />
+            <element signature="e#18037#18038#0" expanded="false" />
+            <element signature="e#18076#18077#0" expanded="false" />
+            <element signature="e#18850#18851#0" expanded="false" />
+            <element signature="e#18884#18885#0" expanded="false" />
+            <element signature="e#18995#18996#0" expanded="false" />
+            <element signature="e#19022#19023#0" expanded="false" />
+            <element signature="e#19700#19701#0" expanded="false" />
+            <element signature="e#19733#19734#0" expanded="false" />
+            <element signature="e#21205#21206#0" expanded="false" />
+            <element signature="e#21235#21236#0" expanded="false" />
+            <element signature="e#21371#21372#0" expanded="false" />
+            <element signature="e#21412#21413#0" expanded="false" />
+            <element signature="e#21541#21542#0" expanded="false" />
+            <element signature="e#21605#21606#0" expanded="false" />
+            <element signature="e#22121#22122#0" expanded="false" />
+            <element signature="e#22184#22185#0" expanded="false" />
+            <element signature="e#23021#23022#0" expanded="false" />
+            <element signature="e#23075#23076#0" expanded="false" />
+            <element signature="e#24186#24187#0" expanded="false" />
+            <element signature="e#24225#24226#0" expanded="false" />
+            <element signature="e#25182#25183#0" expanded="false" />
+            <element signature="e#25220#25221#0" expanded="false" />
+            <element signature="e#25345#25346#0" expanded="false" />
+            <element signature="e#25391#25392#0" expanded="false" />
+            <element signature="e#25651#25652#0" expanded="false" />
+            <element signature="e#25683#25684#0" expanded="false" />
+            <element signature="e#25970#25971#0" expanded="false" />
+            <element signature="e#26002#26003#0" expanded="false" />
+            <element signature="e#26434#26435#0" expanded="false" />
+            <element signature="e#26466#26467#0" expanded="false" />
+            <element signature="e#26675#26676#0" expanded="false" />
+            <element signature="e#26706#26707#0" expanded="false" />
+            <element signature="e#27499#27500#0" expanded="false" />
+            <element signature="e#27529#27530#0" expanded="false" />
+            <element signature="e#27591#27592#0" expanded="false" />
+            <element signature="e#27622#27623#0" expanded="false" />
+            <element signature="e#27683#27684#0" expanded="false" />
+            <element signature="e#27718#27719#0" expanded="false" />
+            <element signature="e#29158#29159#0" expanded="false" />
+            <element signature="e#29196#29197#0" expanded="false" />
+            <element signature="e#31611#31612#0" expanded="false" />
+            <element signature="e#31650#31651#0" expanded="false" />
+            <element signature="e#43805#43806#0" expanded="false" />
+            <element signature="e#43835#43836#0" expanded="false" />
+            <element signature="e#43985#43986#0" expanded="false" />
+            <element signature="e#44012#44013#0" expanded="false" />
+            <element signature="e#44771#44772#0" expanded="false" />
+            <element signature="e#44801#44802#0" expanded="false" />
+            <element signature="e#46964#46965#0" expanded="false" />
+            <element signature="e#46992#46993#0" expanded="false" />
+            <element signature="e#47788#47789#0" expanded="false" />
+            <element signature="e#47818#47819#0" expanded="false" />
+            <element signature="e#48429#48430#0" expanded="false" />
+            <element signature="e#48459#48460#0" expanded="false" />
+            <element signature="e#49343#49344#0" expanded="false" />
+            <element signature="e#49373#49374#0" expanded="false" />
+            <element signature="e#50583#50584#0" expanded="false" />
+            <element signature="e#50613#50614#0" expanded="false" />
+            <element signature="e#50841#50842#0" expanded="false" />
+            <element signature="e#50871#50872#0" expanded="false" />
+            <element signature="e#51096#51097#0" expanded="false" />
+            <element signature="e#51126#51127#0" expanded="false" />
+            <element signature="e#51163#51164#0" expanded="false" />
+            <element signature="e#51193#51194#0" expanded="false" />
+            <element signature="e#51755#51756#0" expanded="false" />
+            <element signature="e#51785#51786#0" expanded="false" />
+            <element signature="e#53495#53496#0" expanded="false" />
+            <element signature="e#53525#53526#0" expanded="false" />
+            <element signature="e#56030#56031#0" expanded="false" />
+            <element signature="e#56058#56059#0" expanded="false" />
+            <element signature="e#57956#57957#0" expanded="false" />
+            <element signature="e#58013#58014#0" expanded="false" />
+            <element signature="e#58354#58355#0" expanded="false" />
+            <element signature="e#58411#58412#0" expanded="false" />
+            <element signature="e#59320#59321#0" expanded="false" />
+            <element signature="e#59348#59349#0" expanded="false" />
+            <element signature="e#60978#60979#0" expanded="false" />
+            <element signature="e#61023#61024#0" expanded="false" />
+            <element signature="e#61576#61577#0" expanded="false" />
+            <element signature="e#61615#61616#0" expanded="false" />
+            <element signature="e#62638#62639#0" expanded="false" />
+            <element signature="e#62684#62685#0" expanded="false" />
+            <element signature="e#64491#64492#0" expanded="false" />
+            <element signature="e#64535#64536#0" expanded="false" />
+            <element signature="e#65309#65310#0" expanded="false" />
+            <element signature="e#65347#65348#0" expanded="false" />
+            <element signature="e#66294#66295#0" expanded="false" />
+            <element signature="e#66341#66342#0" expanded="false" />
+            <element signature="e#68458#68459#0" expanded="false" />
+            <element signature="e#68510#68511#0" expanded="false" />
+            <element signature="e#77707#77708#0" expanded="false" />
+            <element signature="e#77761#77762#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2678,10 +2908,53 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
           <folding>
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-            <element signature="e#4274#4275#0" expanded="true" />
-            <element signature="e#4323#4324#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1866#1867#0" expanded="false" />
+            <element signature="e#1894#1895#0" expanded="false" />
+            <element signature="e#1934#1935#0" expanded="false" />
+            <element signature="e#1962#1963#0" expanded="false" />
+            <element signature="e#1991#1992#0" expanded="false" />
+            <element signature="e#2017#2018#0" expanded="false" />
+            <element signature="e#2053#2054#0" expanded="false" />
+            <element signature="e#2077#2078#0" expanded="false" />
+            <element signature="e#2110#2111#0" expanded="false" />
+            <element signature="e#2140#2141#0" expanded="false" />
+            <element signature="e#2184#2185#0" expanded="false" />
+            <element signature="e#2216#2217#0" expanded="false" />
+            <element signature="e#2254#2255#0" expanded="false" />
+            <element signature="e#2289#2290#0" expanded="false" />
+            <element signature="e#2343#2344#0" expanded="false" />
+            <element signature="e#2385#2386#0" expanded="false" />
+            <element signature="e#2420#2421#0" expanded="false" />
+            <element signature="e#2452#2453#0" expanded="false" />
+            <element signature="e#2500#2501#0" expanded="false" />
+            <element signature="e#2536#2537#0" expanded="false" />
+            <element signature="e#2573#2574#0" expanded="false" />
+            <element signature="e#2607#2608#0" expanded="false" />
+            <element signature="e#2659#2660#0" expanded="false" />
+            <element signature="e#2699#2700#0" expanded="false" />
+            <element signature="e#2738#2739#0" expanded="false" />
+            <element signature="e#2774#2775#0" expanded="false" />
+            <element signature="e#2830#2831#0" expanded="false" />
+            <element signature="e#2874#2875#0" expanded="false" />
+            <element signature="e#2914#2915#0" expanded="false" />
+            <element signature="e#2951#2952#0" expanded="false" />
+            <element signature="e#3009#3010#0" expanded="false" />
+            <element signature="e#3055#3056#0" expanded="false" />
+            <element signature="e#3090#3091#0" expanded="false" />
+            <element signature="e#3122#3123#0" expanded="false" />
+            <element signature="e#3170#3171#0" expanded="false" />
+            <element signature="e#3206#3207#0" expanded="false" />
+            <element signature="e#3244#3245#0" expanded="false" />
+            <element signature="e#3279#3280#0" expanded="false" />
+            <element signature="e#3333#3334#0" expanded="false" />
+            <element signature="e#3375#3376#0" expanded="false" />
+            <element signature="e#3419#3420#0" expanded="false" />
+            <element signature="e#3462#3463#0" expanded="false" />
+            <element signature="e#3642#3643#0" expanded="false" />
+            <element signature="e#3666#3667#0" expanded="false" />
+            <element signature="e#4391#4392#0" expanded="false" />
+            <element signature="e#4442#4443#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2690,7 +2963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2698,15 +2970,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/utils/TextStyleUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item_filter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_drop_down_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.451613">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+          <folding>
+            <element signature="e#1623#1624#0" expanded="false" />
+            <element signature="e#1652#1653#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1732#1733#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/InfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FilterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2718,42 +3046,254 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DialogCategoryFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/search.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/AddActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="62" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Tools/Android-SDK/platforms/android-23/data/res/drawable-ldpi/ic_menu_search.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search_restaurant_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.129032">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_view_location.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/search_bottom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/search_top.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fragment_container.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/coordinator_favorites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.32258">
+          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2498#2499#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#1681#1700#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_favorites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/SearchFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="38" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/searchable.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+          <caret line="161" column="34" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Tools/Android-SDK/sources/android-23/android/view/MenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="70" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/favorites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_view_suggestions_list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantCursorWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantDbSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="34" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="34" />
+          <folding>
+            <element signature="e#6434#6435#0" expanded="true" />
+            <element signature="e#6489#6490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22673436">
-          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6807817">
+          <caret line="176" column="10" selection-start-line="176" selection-start-column="10" selection-end-line="176" selection-end-column="10" />
+          <folding>
+            <element signature="e#6753#6924#0" expanded="true" />
+            <element signature="e#6923#6924#0" expanded="true" />
+            <element signature="e#6965#7172#0" expanded="true" />
+            <element signature="e#7171#7172#0" expanded="true" />
           </folding>
         </state>
       </provider>

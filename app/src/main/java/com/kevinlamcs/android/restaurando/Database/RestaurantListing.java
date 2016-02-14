@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.CursorWrapper;
+import android.database.MatrixCursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
@@ -48,9 +49,10 @@ public class RestaurantListing {
                 new String[]{name});
     }
 
-    public List<Restaurant> getRestaurantList() {
+    public List<Restaurant> getRestaurantList(String sortOrder) {
         List<Restaurant> restaurantList = new ArrayList<>();
-        RestaurantCursorWrapper cursor = (RestaurantCursorWrapper) queryRestaurants(null, null);
+        RestaurantCursorWrapper cursor = (RestaurantCursorWrapper) queryRestaurants(null, null,
+                setUpSortOrderClause(sortOrder));
         try {
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
@@ -63,17 +65,37 @@ public class RestaurantListing {
         return restaurantList;
     }
 
-    public List<Restaurant> getRestaurantList(List<String> queryList, String filterType) {
+    /*public void getRestaurantSuggestions(String sortOrder, MatrixCursor matrixCursor, String
+            query) {
+        RestaurantCursorWrapper cursor = (RestaurantCursorWrapper) queryRestaurants(null, null,
+                setUpSortOrderClause(sortOrder));
+        try {
+            int index = 0;
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                Restaurant restaurant = cursor.getRestaurant();
+                if (restaurant.getName().toLowerCase().contains(query.toLowerCase())) {
+                    matrixCursor.addRow(new Object[]{index, restaurant.getName(), restaurant.getId()});
+                    index++;
+                }
+            }
+        } finally {
+            cursor.close();
+        }
+    }*/
+
+    public List<Restaurant> getRestaurantList(List<String> queryList, String filterType, String
+            sortOrder) {
         StringBuffer stringBuffer = new StringBuffer();
         if (filterType.equals(FILTER_TYPE_CATEGORY)) {
-            stringBuffer = setupWhereClause(RestaurantTable.Cols.CATEGORY, queryList, stringBuffer);
+            stringBuffer = setUpWhereClause(RestaurantTable.Cols.CATEGORY, queryList, stringBuffer);
         } else if (filterType.equals(FILTER_TYPE_SELECTED)) {
-            stringBuffer = setupWhereClause(RestaurantTable.Cols.ID, queryList, stringBuffer);
+            stringBuffer = setUpWhereClause(RestaurantTable.Cols.ID, queryList, stringBuffer);
         }
 
         String[] whereArgs = new String[queryList.size()];
         RestaurantCursorWrapper cursor = (RestaurantCursorWrapper) queryRestaurants(stringBuffer
-                .toString(), queryList.toArray(whereArgs));
+                .toString(), queryList.toArray(whereArgs), setUpSortOrderClause(sortOrder));
         List<Restaurant> restaurantList = new ArrayList<>();
         try {
             cursor.moveToFirst();
@@ -87,7 +109,7 @@ public class RestaurantListing {
         return restaurantList;
     }
 
-    private StringBuffer setupWhereClause(String columnValue, List<String> values, StringBuffer buffer) {
+    private StringBuffer setUpWhereClause(String columnValue, List<String> values, StringBuffer buffer) {
         buffer.append(columnValue + " IN(");
         for (int index=0; index < values.size(); index++) {
             if (index + 1 >= values.size()) {
@@ -97,6 +119,28 @@ public class RestaurantListing {
             buffer.append("?,");
         }
         return buffer;
+    }
+
+    private String setUpSortOrderClause(String sortOrder) {
+        String sortOrderClause = "";
+        switch (sortOrder) {
+            case "Category":
+                sortOrderClause = sortOrderClause + RestaurantTable.Cols.CATEGORY_ID + " ASC, " + RestaurantTable.Cols
+                        .NAME + " ASC";
+                break;
+            case "Name":
+                sortOrderClause = sortOrderClause + RestaurantTable.Cols.NAME + " ASC";
+                break;
+            case "Rating":
+                sortOrderClause = sortOrderClause + RestaurantTable.Cols.RATING + " ASC," + RestaurantTable.Cols
+                        .NAME + " ASC";
+                break;
+            case "Distance":
+                sortOrderClause = sortOrderClause + RestaurantTable.Cols.CATEGORY_ID + " ASC, " + RestaurantTable.Cols
+                        .NAME + " ASC";
+                break;
+        }
+        return sortOrderClause;
     }
 
     private static ContentValues getContentValues(Restaurant restaurant) {
@@ -110,10 +154,10 @@ public class RestaurantListing {
         return contentValues;
     }
 
-    private CursorWrapper queryRestaurants(String whereClause, String[] whereArgs) {
+    private CursorWrapper queryRestaurants(String whereClause, String[] whereArgs, String
+            sortOrderClause) {
         Cursor cursor = mDatabase.query(RestaurantTable.TABLE_NAME, null, whereClause, whereArgs,
-                null, null, RestaurantTable.Cols.CATEGORY_ID + " ASC, " + RestaurantTable.Cols
-                        .NAME + " ASC");
+                null, null, sortOrderClause);
         return new RestaurantCursorWrapper(cursor);
     }
 }

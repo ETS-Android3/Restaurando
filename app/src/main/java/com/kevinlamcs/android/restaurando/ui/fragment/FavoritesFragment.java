@@ -10,7 +10,10 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CursorAdapter;
+import android.widget.SimpleCursorAdapter;
 
+import com.kevinlamcs.android.restaurando.Database.RestaurantDbSchema;
 import com.kevinlamcs.android.restaurando.R;
 import com.kevinlamcs.android.restaurando.ui.activity.FavoritesActivity;
 import com.kevinlamcs.android.restaurando.ui.adapter.FavoritesAdapter;
@@ -28,7 +31,8 @@ public class FavoritesFragment extends Fragment {
 
     private Restaurant mRestaurant;
     private RecyclerView mRecyclerView;
-    private FavoritesAdapter mFavoritesAdapter;
+    private FavoritesAdapter mFavoritesRestaurantListAdapter;
+    private SimpleCursorAdapter favoritesSuggestionListAdapter;
 
     private List<String> mListCategoriesToFilter;
     private boolean mIsSelectAllRestaurantsForRandomize;
@@ -49,7 +53,6 @@ public class FavoritesFragment extends Fragment {
                 (R.id.fragment_favorites_restaurant_list_recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        //updateUi();
         setupSwipeToDelete();
 
         return view;
@@ -70,37 +73,32 @@ public class FavoritesFragment extends Fragment {
             if (mRestaurant.getCategory() != null) {
                 mRestaurant.setCategoryId(mRestaurant.getCategory().substring(0, 1));
             }
-            mFavoritesAdapter.addRestaurant(mRestaurant);
+            mFavoritesRestaurantListAdapter.addRestaurant(mRestaurant);
         } else if (requestCode == FavoritesActivity.REQUEST_FILTER && resultCode == Activity
                 .RESULT_OK) {
             filterOptions = data.getParcelableExtra(FilterFragment.EXTRA_FILTER_OPTIONS);
-            mFavoritesAdapter.filter(filterOptions);
+            mFavoritesRestaurantListAdapter.filter(filterOptions);
         }
     }
 
     public FilterOptions setupFilterOptions() {
-        List<String> categories = mFavoritesAdapter.getRestaurantCategories();
+        List<String> categories = mFavoritesRestaurantListAdapter.getRestaurantCategories();
         filterOptions.setAllCategories(categories);
         return filterOptions;
     }
 
     public void updateUi() {
-        if (mFavoritesAdapter == null) {
-            mFavoritesAdapter = new FavoritesAdapter(getActivity());
-            mRecyclerView.setAdapter(mFavoritesAdapter);
+        if (mFavoritesRestaurantListAdapter == null) {
+            mFavoritesRestaurantListAdapter = new FavoritesAdapter(getActivity());
+            mRecyclerView.setAdapter(mFavoritesRestaurantListAdapter);
         } else {
-            /*if (filterOptions.getFilteredCategories() == null || filterOptions
-                    .getFilteredCategories().isEmpty()) {
-                mFavoritesAdapter.setRestaurantList();
-            } else {*/
             if (filterOptions.getFilteredCategories().isEmpty()) {
-                mFavoritesAdapter.setRestaurantList();
+                mFavoritesRestaurantListAdapter.setRestaurantList();
             } else {
-                mFavoritesAdapter.setRestaurantList(filterOptions.getFilteredCategories());
+                mFavoritesRestaurantListAdapter.setRestaurantList(filterOptions.getFilteredCategories());
             }
             filterOptions.setIsFilterFinished(true);
-            mFavoritesAdapter.filter(filterOptions);
-            //}
+            mFavoritesRestaurantListAdapter.filter(filterOptions);
         }
     }
 
@@ -115,13 +113,17 @@ public class FavoritesFragment extends Fragment {
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-                Restaurant restaurant = mFavoritesAdapter.getRestaurant(
+                Restaurant restaurant = mFavoritesRestaurantListAdapter.getRestaurant(
                         viewHolder.getAdapterPosition());
-                mFavoritesAdapter.removeRestaurant(restaurant, viewHolder.getAdapterPosition());
+                mFavoritesRestaurantListAdapter.removeRestaurant(restaurant, viewHolder.getAdapterPosition());
             }
         };
 
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleCallback);
         itemTouchHelper.attachToRecyclerView(mRecyclerView);
+    }
+
+    public List<Restaurant> getActiveRestaurantList() {
+        return mFavoritesRestaurantListAdapter.getCurrentRestaurantList();
     }
 }

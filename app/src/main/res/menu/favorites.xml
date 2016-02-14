@@ -3,14 +3,22 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".FavoritesActivity">
     <item
+        android:id="@+id/toggle_shake"
+        android:title="Toggle Shake"
+        android:orderInCategory="1"
+        app:actionViewClass="android.support.v7.widget.SwitchCompat"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search_restaurant"
+        android:title="Search"
+        android:icon="@drawable/search"
+        android:orderInCategory="2"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
         android:id="@+id/filter"
         android:title="Filter"
         android:icon="@drawable/filter"
-        android:orderInCategory="100"
-        app:showAsAction="always"/>
-    <item
-        android:id="@+id/toggle_shake"
-        android:title="Toggle Shake"
-        app:actionViewClass="android.support.v7.widget.SwitchCompat"
-        app:showAsAction="always" />
+        android:orderInCategory="3"
+        app:showAsAction="never" />
 </menu>

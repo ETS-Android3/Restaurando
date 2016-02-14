@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.ListPopupWindow;
 import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -12,8 +13,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.kevinlamcs.android.restaurando.R;
@@ -25,7 +29,7 @@ import java.util.List;
 /**
  * Created by kevin-lam on 1/28/16.
  */
-public class FilterFragment extends Fragment {
+public class FilterFragment extends Fragment implements AdapterView.OnItemClickListener {
 
     public static final String EXTRA_FILTER_OPTIONS = "com.kevinlamcs.android.restaurando.ui" +
             ".fragment.FilterFragment.filterOptions";
@@ -35,6 +39,8 @@ public class FilterFragment extends Fragment {
     private SwitchCompat mSwitchSelectAllFilteredItems;
     private TextView mTextViewDisplayedCategories;
     private TextView mTextViewClearCategories;
+    private TextView textViewSortOption;
+    private ListPopupWindow listPopupWindow;
 
     private FilterOptions filterOptions = new FilterOptions();
 
@@ -63,22 +69,43 @@ public class FilterFragment extends Fragment {
         mSwitchSelectAllFilteredItems.setChecked(filterOptions.isSelectAllFiltered());
         mSwitchSelectAllFilteredItems.setOnCheckedChangeListener(
                 new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        filterOptions.setIsSelectAllFiltered(isChecked);
+                    }
+                });
+
+        LinearLayout linearLayoutSortBy = (LinearLayout)v.findViewById(R.id
+                .fragment_filter_sort_by);
+        textViewSortOption = (TextView)v.findViewById(R.id.fragment_filter_displayed_sort_option);
+        listPopupWindow = new ListPopupWindow(getContext());
+        listPopupWindow.setAdapter(new ArrayAdapter(getContext(), R.layout.list_drop_down_item,
+                new String[]{"Category", "Name", "Rating", "Distance"}));
+        listPopupWindow.setAnchorView(linearLayoutSortBy);
+        listPopupWindow.setWidth(ListPopupWindow.WRAP_CONTENT);
+        listPopupWindow.setHeight(ListPopupWindow.WRAP_CONTENT);
+        listPopupWindow.setVerticalOffset(-224);
+        listPopupWindow.setModal(true);
+        listPopupWindow.setOnItemClickListener(this);
+        linearLayoutSortBy.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                filterOptions.setIsSelectAllFiltered(isChecked);
+            public void onClick(View v) {
+                listPopupWindow.show();
             }
         });
 
+
+
         mTextViewDisplayedCategories = (TextView)v.findViewById(
                 R.id.fragment_filter_displayed_categories);
-        updateUi(filterOptions.getFilteredCategories());
+        updateUi(filterOptions.getFilteredCategories(), filterOptions.getSortBy());
 
         mTextViewClearCategories = (TextView)v.findViewById(R.id.fragment_filter_clear_categories);
         mTextViewClearCategories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 filterOptions.clearFilteredCategories();
-                updateUi(filterOptions.getFilteredCategories());
+                updateUi(filterOptions.getFilteredCategories(), filterOptions.getSortBy());
             }
         });
 
@@ -123,11 +150,20 @@ public class FilterFragment extends Fragment {
 
         if (requestCode == REQUEST_SELECTED_CATEGORIES) {
             filterOptions = data.getParcelableExtra(DialogCategoryFragment.EXTRA_FILTER_OPTIONS);
-            updateUi(filterOptions.getFilteredCategories());
+            updateUi(filterOptions.getFilteredCategories(), filterOptions.getSortBy());
         }
     }
 
-    private void updateUi(List<String> selectedCategories) {
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        String sortOption = (String)parent.getItemAtPosition(position);
+        filterOptions.setSortBy(sortOption);
+        updateUi(filterOptions.getFilteredCategories(), filterOptions.getSortBy());
+        listPopupWindow.dismiss();
+
+    }
+
+    private void updateUi(List<String> selectedCategories, String sortOption) {
         String displayedCategoriesString = "";
 
         if (selectedCategories.isEmpty()) {
@@ -143,5 +179,7 @@ public class FilterFragment extends Fragment {
         }
 
         mTextViewDisplayedCategories.setText(displayedCategoriesString);
+        textViewSortOption.setText(sortOption);
+
     }
 }

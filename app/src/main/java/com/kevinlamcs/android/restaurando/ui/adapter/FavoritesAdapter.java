@@ -46,7 +46,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
     public FavoritesAdapter(Context context) {
         mContext = context;
         mRestaurantListing = RestaurantListing.get(context);
-        mListRestaurant = mRestaurantListing.getRestaurantList();
+        mListRestaurant = mRestaurantListing.getRestaurantList(filterOptions.getSortBy());
 
         for (Restaurant restaurant : mListRestaurant) {
             mMapRestaurantSelectedState.put(restaurant.getId(), false);
@@ -107,15 +107,17 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
     }
 
     public List<Restaurant> getRestaurantList() {
-        return mRestaurantListing.getRestaurantList();
+        return mRestaurantListing.getRestaurantList(filterOptions.getSortBy());
     }
 
     public List<Restaurant> getRestaurantList(List<String> categories) {
-        return mRestaurantListing.getRestaurantList(categories, RestaurantListing.FILTER_TYPE_CATEGORY);
+        return mRestaurantListing.getRestaurantList(categories, RestaurantListing
+                .FILTER_TYPE_CATEGORY, filterOptions.getSortBy());
     }
 
     public List<Restaurant> getSelectedRestaurantList(List<String> selectedRestaurants) {
-        return mRestaurantListing.getRestaurantList(selectedRestaurants, RestaurantListing.FILTER_TYPE_SELECTED);
+        return mRestaurantListing.getRestaurantList(selectedRestaurants, RestaurantListing
+                .FILTER_TYPE_SELECTED, filterOptions.getSortBy());
     }
 
     public Restaurant getRestaurant(int position) {
@@ -163,6 +165,10 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
             }
         }
         return listSelectedRestaurants;
+    }
+
+    public List<Restaurant> getCurrentRestaurantList() {
+        return new ArrayList<>(mListRestaurant);
     }
 
     public List<Restaurant> removeDuplicateRestaurants(List<Restaurant> filteredRestaurantList,

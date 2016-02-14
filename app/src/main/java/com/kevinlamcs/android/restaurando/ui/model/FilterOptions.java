@@ -15,11 +15,13 @@ public class FilterOptions implements Parcelable {
     private List<String> filteredCategories;
     private List<String> allCategories;
     private boolean isFilterFinished;
+    private String sortBy;
 
     public FilterOptions() {
         this.filteredCategories = new ArrayList<>();
         this.allCategories = new ArrayList<>();
         this.isFilterFinished = true;
+        this.sortBy = "Category";
     }
 
     public boolean isSelectAllFiltered() {
@@ -58,6 +60,14 @@ public class FilterOptions implements Parcelable {
         this.allCategories = allCategories;
     }
 
+    public String getSortBy() {
+        return sortBy;
+    }
+
+    public void setSortBy(String sortBy) {
+        this.sortBy = sortBy;
+    }
+
     protected FilterOptions(Parcel in) {
         this.filteredCategories = new ArrayList<>();
         this.allCategories = new ArrayList<>();
@@ -69,6 +79,8 @@ public class FilterOptions implements Parcelable {
 
         in.readStringList(filteredCategories);
         in.readStringList(allCategories);
+
+        this.sortBy = in.readString();
     }
 
     public static final Creator<FilterOptions> CREATOR = new Creator<FilterOptions>() {
@@ -93,5 +105,6 @@ public class FilterOptions implements Parcelable {
         dest.writeBooleanArray(new boolean[] {this.isSelectAllFiltered, this.isFilterFinished});
         dest.writeStringList(filteredCategories);
         dest.writeStringList(allCategories);
+        dest.writeString(sortBy);
     }
 }

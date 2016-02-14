@@ -12,4 +12,11 @@
     <string name="no_address">No address found</string>
     <string name="review_count">%1$s reviews</string>
     <string name="add_done">Add done</string>
+
+    <string-array name="sort_by_array">
+        <item>Categories</item>
+        <item>Name</item>
+        <item>Rating</item>
+        <item>Distance</item>
+    </string-array>
 </resources>

@@ -1,10 +1,13 @@
 package com.kevinlamcs.android.restaurando.ui.activity;
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.database.MatrixCursor;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.provider.BaseColumns;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -13,6 +16,7 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -22,7 +26,10 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.CursorAdapter;
+import android.widget.SimpleCursorAdapter;
 
+import com.kevinlamcs.android.restaurando.Database.RestaurantDbSchema;
 import com.kevinlamcs.android.restaurando.Database.RestaurantListing;
 import com.kevinlamcs.android.restaurando.R;
 
@@ -33,7 +40,6 @@ import com.kevinlamcs.android.restaurando.ui.activity.root.SingleFragmentActivit
 import com.kevinlamcs.android.restaurando.ui.model.FilterOptions;
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -59,6 +65,10 @@ public class FavoritesActivity extends SingleFragmentActivity
 
     private static boolean sIsShakeEnabled = true;
 
+    private boolean searchCheck;
+
+    private android.support.v4.widget.SimpleCursorAdapter favoritesSuggestionListAdapter;
+
 
     @Override
     protected Fragment createFragment() {
@@ -73,7 +83,7 @@ public class FavoritesActivity extends SingleFragmentActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.activity_favorites_toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.activity_search_fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.activity_add_fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -143,6 +153,29 @@ public class FavoritesActivity extends SingleFragmentActivity
                 return false;
             }
         });
+
+        MenuItem searchItem = menu.findItem(R.id.search_restaurant);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setQueryHint("Search Restaurant");
+        /*setUpSearchViewSuggestions();
+        searchView.setSuggestionsAdapter(favoritesSuggestionListAdapter);
+        searchView.setOnQueryTextListener(this);
+        searchView.setOnSuggestionListener(this);*/
+        searchView.setOnSearchClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mToggleShake.setVisibility(View.GONE);
+            }
+        });
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                mToggleShake.setVisibility(View.VISIBLE);
+                return false;
+            }
+        });
+        //searchCheck = false;
+
         return true;
     }
 
@@ -158,6 +191,11 @@ public class FavoritesActivity extends SingleFragmentActivity
                 intent.putExtra(EXTRA_FILTER_OPTIONS, filterOptions);
                 startActivityForResult(intent, REQUEST_FILTER);
                 break;
+            /*case R.id.search_restaurant:
+                searchCheck = true;
+                break;*/
+            default:
+                super.onOptionsItemSelected(item);
         }
         return true;
     }
@@ -216,10 +254,36 @@ public class FavoritesActivity extends SingleFragmentActivity
         super.onPause();
     }
 
+    /*@Override
+    public boolean onQueryTextSubmit(String query) {
+        searchCheck = false;
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String query) {
+        if (searchCheck) {
+            displaySuggestions(query);
+        }
+        return false;
+    }
+
+    @Override
+    public boolean onSuggestionSelect(int position) {
+        return false;
+    }
+
+    @Override
+    public boolean onSuggestionClick(int position) {
+        return false;
+    }*/
+
 
     private void onShakeRandomize(int count) {
-        RestaurantListing restaurantListing = RestaurantListing.get(this);
-        List<Restaurant> restaurantList = restaurantListing.getRestaurantList();
+        FavoritesFragment fragment = (FavoritesFragment)getSupportFragmentManager()
+                .findFragmentById(R.id.fragment_container);
+        List<Restaurant> restaurantList = fragment.getActiveRestaurantList();
+
         Random random = new Random();
         Restaurant restaurant = restaurantList.get(random.nextInt(restaurantList.size()));
 
@@ -228,4 +292,22 @@ public class FavoritesActivity extends SingleFragmentActivity
         startActivity(intent);
 
     }
+
+    /*private void setUpSearchViewSuggestions() {
+        String[] from = new String[]{RestaurantDbSchema.RestaurantTable.Cols.NAME};
+        int[] to = new int[]{android.R.id.text1};
+        favoritesSuggestionListAdapter = new android.support.v4.widget.SimpleCursorAdapter(this,
+                R.layout.search_view_suggestions_list_item, null, from, to, CursorAdapter
+                .FLAG_REGISTER_CONTENT_OBSERVER);
+
+    }
+
+    private void displaySuggestions(String query) {
+        MatrixCursor matrixCursor = new MatrixCursor(new String[]{BaseColumns._ID,
+                RestaurantDbSchema.RestaurantTable.Cols.NAME, RestaurantDbSchema.RestaurantTable
+                .Cols.ID});
+        RestaurantListing restaurantListing = new RestaurantListing(getApplicationContext());
+        restaurantListing.getRestaurantSuggestions("Name", matrixCursor, query);
+        favoritesSuggestionListAdapter.changeCursor(matrixCursor);
+    }*/
 }
