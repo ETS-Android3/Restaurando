@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <com.kevinlamcs.android.restaurando.ui.widget.SameSelectionSpinner
+        android:id="@+id/spinner_toolbar_multiple_favorites_list"
+        style="@style/Widget.Restaurando.Toolbar.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/spinner_toolbar_edit_text_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/spinner_toolbar_edit_text_drawable_padding"
+        android:drawableRight="@drawable/spinner_triangle"
+        android:drawableEnd="@drawable/spinner_triangle"
+        android:paddingLeft="@dimen/spinner_toolbar_edit_text_padding_left"
+        android:paddingStart="@dimen/spinner_toolbar_edit_text_padding_left"
+        android:paddingRight="@dimen/spinner_toolbar_edit_text_padding_right"
+        android:paddingEnd="@dimen/spinner_toolbar_edit_text_padding_right"
+        android:paddingTop="@dimen/spinner_toolbar_edit_text_padding_top"
+        android:background="@android:color/transparent"
+        style="@style/TextEditTextTitle"
+        android:imeOptions="flagNoFullscreen"
+        android:inputType="textCapSentences|textFilter|textNoSuggestions"
+        android:textColor="@color/colorWhite"
+        android:singleLine="true"
+        android:textCursorDrawable="@null"
+        android:visibility="gone"/>
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_favorites_root"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/selector_list_item_favorites">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <ImageView android:id="@+id/list_item_favorites_category_image"
+                android:layout_width="@dimen/favorites_category_image_diameter"
+                android:layout_height="@dimen/favorites_category_image_diameter"
+                android:layout_marginTop="@dimen/favorites_category_image_margin_top"
+                android:layout_marginLeft="@dimen/favorites_category_image_margin_left"
+                android:layout_marginStart="@dimen/favorites_category_image_margin_left"
+                android:contentDescription="@string/favorites_category_image_descriptions"
+                tools:src="@android:drawable/ic_media_play"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8.3"
+                android:orientation="vertical">
+                <TextView android:id="@+id/list_item_favorites_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/favorites_name_margin_top"
+                    android:paddingLeft="@dimen/favorites_name_padding_left"
+                    android:paddingStart="@dimen/favorites_name_padding_left"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    style="@style/TextSubheading"
+                    android:textColor="@color/colorDarkText"
+                    tools:text="Restaurant Name"/>
+                <TextView android:id="@+id/list_item_favorites_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/favorites_category_name_padding_left"
+                    android:paddingStart="@dimen/favorites_category_name_padding_left"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    style="@style/TextBodyOne"
+                    android:textColor="@color/colorDarkTextCaptionLight"
+                    tools:text="Mexican"/>
+            </LinearLayout>
+            <TextView android:id="@+id/list_item_favorites_rating_for_randomize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_marginTop="@dimen/favorites_rating_randomize_margin_top"
+                android:animateLayoutChanges="true"
+                style="@style/TextBodyOne"
+                android:textColor="@color/colorDarkTextCaptionLight"
+                android:visibility="invisible"
+                tools:text="8.1"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/list_item_favorites_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/favorites_rating_margin_top"
+                    android:animateLayoutChanges="true"
+                    style="@style/TextBodyOne"
+                    android:textColor="@color/colorDarkTextCaptionLight"
+                    tools:text="9.1"/>
+                <ImageView
+                    android:id="@+id/list_item_favorites_check_for_randomize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/favorites_check_randomize_margin_top"
+                    android:animateLayoutChanges="true"
+                    android:contentDescription="@string/favorites_check_for_randomize_description"
+                    android:src="@drawable/check_randomize"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

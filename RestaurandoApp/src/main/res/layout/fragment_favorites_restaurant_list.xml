@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_favorites_restaurant_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/fragment_favorites_restaurant_list_empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView android:id="@+id/fragment_favorites_restaurant_list_empty_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/empty_state_max_width"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:text="@string/empty_state"/>
+        <ImageView android:id="@+id/fragment_favorites_restaurant_list_empty_state_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/empty_state_description"
+            android:layout_above="@id/fragment_favorites_restaurant_list_empty_state_text"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empty"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Restaurando</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Search</string>
+    <string name="no_address">No address found</string>
+    <string name="review_count">%1$s reviews</string>
+    <string name="add_done">Add done</string>
+    <string name="mark_filtered">Mark filtered items</string>
+    <string name="sort">Sort by</string>
+    <string name="categories">Categories</string>
+    <string name="none">None</string>
+    <string name="clear_categories">Clear categories</string>
+    <string name="select_categories">Select categories</string>
+    <string name="remove_list">Remove %1$s?</string>
+    <string name="title_how_to">How-To</string>
+    <string name="duplicate_name">List with same name already exists.</string>
+    <string name="minimum_name_length">List name must be at least one character long.</string>
+    <string name="remove_list_warning">All your favorited restaurants in this list will be discarded.</string>
+    <string name="remove_list_warning_positive_button">Remove</string>
+    <string name="remove_list_warning_negative_button">Cancel</string>
+    <string name="no_internet_limited_details">No internet connection detected. Information displayed will be limited.</string>
+    <string name="search_term_hint">Search</string>
+    <string name="search_term_clear">Clear</string>
+    <string name="search_location_hint">Location</string>
+    <string name="default_search">Search nearby</string>
+    <string name="search_location_clear">Clear</string>
+    <string name="donate_dialog_title">Choose an amount</string>
+    <string name="category_dialog_positive_button">DONE</string>
+    <string name="category_dialog_negative_button">CANCEL</string>
+    <string name="call">CALL</string>
+    <string name="directions">DIRECTIONS</string>
+    <string name="yelp">YELP</string>
+    <string name="thoughts">Thoughts:</string>
+    <string name="restaurant_image_description">Restaurant image</string>
+    <string name="rating_image_description">Rating image</string>
+    <string name="add_thoughts_button_description">Add thoughts</string>
+    <string name="empty_state">No favorite restaurants saved yet.</string>
+    <string name="empty_state_description">Empty list</string>
+    <string name="search_no_connectivity">Connectivity not found. Please try again.</string>
+    <string name="no_results">No results</string>
+    <string name="no_connectivity_description">No connectivity</string>
+    <string name="no_search_results">No results.</string>
+    <string name="no_results_description">No results</string>
+    <string name="how_to_step_one">1. START by clicking the plus button</string>
+    <string name="how_to_step_two">2. SEARCH by term and location</string>
+    <string name="how_to_step_three">3. ADD to your favorites list</string>
+    <string name="how_to_step_four">4. FILTER your desired restaurants</string>
+    <string name="how_to_step_five">5. SELECT by pressing and holding</string>
+    <string name="how_to_step_six">6. SHAKE to randomly choose</string>
+    <string name="how_to_step_seven">7. CREATE new lists</string>
+    <string name="favorites_category_image_descriptions">Favorites category image</string>
+    <string name="favorites_check_for_randomize_description">Favorites check for randomize</string>
+    <string name="list_item_search_star_description">Search star</string>
+    <string name="donate">Donate</string>
+    <string name="how_to">How-To</string>
+    <string name="save">Save</string>
+    <string name="toggle_shake">Toggle Shake</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="add">Add</string>
+    <string name="rename">Rename</string>
+    <string name="remove">Remove</string>
+    <string name="done">Done</string>
+</resources>

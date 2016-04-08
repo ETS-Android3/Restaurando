@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_parent_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <include layout="@layout/activity_fragment_container"/>
+    </ScrollView>
+
+    <View android:background="@drawable/actionbar_transparent_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/transparent_toolbar_gradient"/>
+
+    <android.support.v7.widget.Toolbar android:id="@+id/activity_add_restaurant_tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <FrameLayout android:id="@+id/activity_add_progress_bar_circular_download_image"
+            android:layout_width="@dimen/progress_bar_frame"
+            android:layout_height="@dimen/progress_bar_frame">
+            <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+                android:layout_width="@dimen/circular_progress_bar_diameter"
+                android:layout_height="@dimen/circular_progress_bar_diameter"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"/>
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

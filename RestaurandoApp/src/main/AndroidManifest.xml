@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kevinlamcs.android.restaurando" >
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/restaurando_launcher_icon"
+        android:label="@string/app_name"
+        android:name=".application.RestaurandoApplication"
+        android:supportsRtl="true"
+        android:theme="@style/FirstTheme.Base" >
+        <activity
+            android:name=".ui.activity.FavoritesActivity"
+            android:theme="@style/FavoritesActivityTheme"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:parentActivityName=".ui.activity.FavoritesActivity"
+            android:theme="@style/SearchActivityTheme"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".ui.activity.AddActivity"
+            android:parentActivityName=".ui.activity.SearchActivity"
+            android:theme="@style/AddActivityTheme"/>
+        <activity
+            android:name=".ui.activity.InfoActivity"
+            android:parentActivityName=".ui.activity.FavoritesActivity"
+            android:theme="@style/AddActivityTheme"/>
+        <activity
+            android:name=".ui.activity.FilterActivity"
+            android:label="Filter"
+            android:parentActivityName=".ui.activity.FavoritesActivity"
+            android:theme="@style/FilterActivityTheme"/>
+        <activity
+            android:name=".ui.activity.YelpViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/YelpViewActivityTheme"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="edd21df40cc05d53eab91ae3cd0671b7350ec8c2" />
+    </application>
+
+</manifest>

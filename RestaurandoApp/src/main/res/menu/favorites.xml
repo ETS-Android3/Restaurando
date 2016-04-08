@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".FavoritesActivity">
+    <item
+        android:id="@+id/toggle_shake"
+        android:title="@string/toggle_shake"
+        android:orderInCategory="1"
+        app:actionViewClass="android.support.v7.widget.SwitchCompat"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search_restaurant"
+        android:title="@string/search"
+        android:icon="@drawable/search"
+        android:orderInCategory="2"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+    <item
+        android:id="@+id/filter"
+        android:title="@string/filter"
+        android:icon="@drawable/filter"
+        android:orderInCategory="3"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/add_restaurant_list"
+        android:title="@string/add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/rename_restaurant_list"
+        android:title="@string/rename"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/remove_restaurant_list"
+        android:title="@string/remove"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/rename_done"
+        android:title="@string/done"
+        android:icon="@drawable/done"
+        app:showAsAction="always"
+        android:visible="false"/>
+</menu>

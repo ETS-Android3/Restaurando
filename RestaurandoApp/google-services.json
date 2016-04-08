@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_id": "restaurando-11897",
+    "project_number": "723465618571",
+    "name": "Restaurando"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723465618571:android:6609cdf61ead9c00",
+        "client_id": "android:com.kevinlamcs.android.restaurando",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.kevinlamcs.android.restaurando",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-75647990-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

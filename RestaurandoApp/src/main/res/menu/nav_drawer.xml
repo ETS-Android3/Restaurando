@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/donate"
+            android:title="@string/donate"/>
+    </group>
+    <item
+        android:id="@+id/how_to"
+        android:title="@string/how_to"
+        android:icon="@drawable/how_to">
+    </item>
+
+</menu>

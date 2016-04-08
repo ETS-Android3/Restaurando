@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/activity_filter_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingRight="@dimen/filter_margin"
+        android:paddingLeft="@dimen/filter_margin"
+        android:paddingStart="@dimen/filter_margin"
+        android:paddingEnd="@dimen/filter_margin"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        app:titleTextAppearance="@style/TextTitle"
+        app:titleTextColor="@color/colorWhite"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/activity_fragment_container"/>
+    </ScrollView>
+</LinearLayout>

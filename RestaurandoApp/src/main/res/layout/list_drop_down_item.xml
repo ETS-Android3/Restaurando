@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/drop_down_item_padding_left"
+    android:paddingStart="@dimen/drop_down_item_padding_left"
+    android:paddingRight="@dimen/drop_down_item_padding_right"
+    android:paddingEnd="@dimen/drop_down_item_padding_right"
+    android:paddingTop="@dimen/drop_down_item_padding_top"
+    android:paddingBottom="@dimen/drop_down_item_padding_bottom"
+    style="@style/TextSubheading"
+    android:textColor="@color/colorDarkText"/>

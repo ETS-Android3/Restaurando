@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF5350</color>
+    <color name="colorPrimaryDark">#E53935</color>
+    <color name="colorAccent">#FFD600</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGreyBackground">#FAFAFA</color>
+    <color name="colorMidGreyBackground">#F5F5F5</color>
+    <color name="colorDarkGreyBackground">#E0E0E0</color>
+    <color name="colorLightText">#DEFFFFFF</color>
+    <color name="colorDarkText">#DE000000</color>
+    <color name="colorDialogText">#8A000000</color>
+    <color name="colorDarkTextCaptionLight">#66000000</color>
+    <color name="colorDarkTextCaptionDark">#8A000000</color>
+    <color name="colorDarkDivider">#1F000000</color>
+    <color name="colorHighlightConfirmationButton">#4D000000</color>
+    <color name="colorHighlightGenericButton">#1F000000</color>
+    <color name="colorDialogButton">#D8388E3C</color>
+    <color name="colorPrimaryDisabled">#50ef5350</color>
+    <color name="colorWhiteTextDisabled">#c8ffffff</color>
+    <color name="colorAccentDisabled">#3CFFD600</color>
+    <color name="colorDarkTextDisabled">#42000000</color>
+    <color name="colorWhiteBackgroundDisabled">#0c000000</color>
+    <color name="colorToolbarShadow">#77333333</color>
+</resources>

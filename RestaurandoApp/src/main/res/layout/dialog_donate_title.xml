@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/donate_dialog_title_padding"
+        android:paddingStart="@dimen/donate_dialog_title_padding"
+        android:paddingEnd="@dimen/donate_dialog_title_padding"
+        android:paddingLeft="@dimen/donate_dialog_title_padding"
+        android:paddingRight="@dimen/donate_dialog_title_padding"
+        android:paddingBottom="@dimen/donate_dialog_title_padding_bottom"
+        style="@style/TextTitle"
+        android:textColor="@color/colorDarkText"
+        android:text="@string/donate_dialog_title"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_search_restaurant_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout android:id="@+id/fragment_search_restaurant_list_empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView android:id="@+id/fragment_search_restaurant_list_empty_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/empty_state_max_width"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/search_no_connectivity"
+            android:textSize="18sp"/>
+        <ImageView android:id="@+id/fragment_search_restaurant_list_empty_state_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_above="@id/fragment_search_restaurant_list_empty_state_text"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/no_connectivity_description"
+            android:src="@drawable/no_connectivity"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/fragment_search_restaurant_list_error_search_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/fragment_search_restaurant_list_error_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/empty_state_max_width"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_search_results"
+            android:textSize="18sp"/>
+        <ImageView android:id="@+id/fragment_search_restaurant_list_error_search_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_above="@id/fragment_search_restaurant_list_error_search_text"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/no_results_description"
+            android:src="@drawable/no_results"/>
+    </RelativeLayout>
+</RelativeLayout>

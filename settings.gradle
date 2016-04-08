@@ -1,1 +1,3 @@
-include ':app'
+include ':RestaurandoApp'
+include ':RestaurandoApp:libraries:TextDrawableMaterialColors'
+include ':RestaurandoApp:libraries:MaterialDesign'

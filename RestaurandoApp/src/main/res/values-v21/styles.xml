@@ -1,0 +1,23 @@
+<resources>>
+    <style name="FirstTheme.Base.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Restaurando.Toolbar.Spinner"
+           parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:overlapAnchor">true</item>
+    </style>
+
+    <style name="AlertDialogRemoveList" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorDialogButton</item>
+        <item name="android:textColorPrimary">@color/colorDialogText</item>
+        <item name="android:windowTitleStyle">@style/TextDialogTitle</item>
+    </style>
+</resources>

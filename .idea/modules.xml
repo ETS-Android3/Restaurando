@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/MaterialDesign.iml" filepath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/MaterialDesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/Restaurando.iml" filepath="$PROJECT_DIR$/Restaurando.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RestaurandoApp/RestaurandoApp.iml" filepath="$PROJECT_DIR$/RestaurandoApp/RestaurandoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RestaurandoApp/libraries/TextDrawableMaterialColors/TextDrawableMaterialColors.iml" filepath="$PROJECT_DIR$/RestaurandoApp/libraries/TextDrawableMaterialColors/TextDrawableMaterialColors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RestaurandoApp/libraries/libraries.iml" filepath="$PROJECT_DIR$/RestaurandoApp/libraries/libraries.iml" />
     </modules>
   </component>
 </project>
