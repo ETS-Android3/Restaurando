@@ -62,7 +62,7 @@
     <dimen name="mark_filtered_margin_bottom">16dp</dimen>
     <dimen name="sort_by_margin">8dp</dimen>
     <dimen name="sort_by_padding_left">24dp</dimen>
-    <dimen name="filter_categories_margin">8dp</dimen>
+    <dimen name="filter_categories_margin">12dp</dimen>
     <dimen name="filter_categories_padding_left">24dp</dimen>
     <dimen name="clear_categories_height">64dp</dimen>
     <dimen name="clear_categories_padding_left">24dp</dimen>

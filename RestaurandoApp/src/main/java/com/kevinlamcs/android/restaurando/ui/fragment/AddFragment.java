@@ -173,7 +173,7 @@ public class AddFragment extends Fragment {
                 R.id.fragment_add_restaurant_details);
 
         // If there is internet, retrieve the image. Otherwise display the placeholder.
-        if (LocationUtils.isConnectedToInternet(getContext())) {
+        if (restaurant.getImageUrl()!= null || LocationUtils.isConnectedToInternet(getContext())) {
             Glide.with(this)
                     .load(restaurant.getImageUrl())
                     .listener(new RequestListener<String, GlideDrawable>() {

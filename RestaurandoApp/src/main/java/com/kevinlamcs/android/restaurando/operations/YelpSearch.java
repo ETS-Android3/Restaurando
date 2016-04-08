@@ -145,9 +145,11 @@ public class YelpSearch {
 
             restaurant.setUrl(business.mobile_url);
 
-            String largeImage = StringManipulationUtils.replaceImageUrlSize
-                    (business.image_url);
-            restaurant.setImageUrl(largeImage);
+            if (business.image_url != null) {
+                String largeImage = StringManipulationUtils.replaceImageUrlSize
+                        (business.image_url);
+                restaurant.setImageUrl(largeImage);
+            }
             restaurantList.add(restaurant);
         }
 
@@ -184,11 +186,11 @@ public class YelpSearch {
 
         restaurant.setUrl(business.mobile_url);
 
-        String largeImage = StringManipulationUtils.replaceImageUrlSize
-                (business.image_url);
-        restaurant.setImageUrl(largeImage);
-
-
+        if (business.image_url != null) {
+            String largeImage = StringManipulationUtils.replaceImageUrlSize
+                    (business.image_url);
+            restaurant.setImageUrl(largeImage);
+        }
         return restaurant;
     }
 }

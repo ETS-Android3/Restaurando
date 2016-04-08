@@ -80,8 +80,10 @@ public class FilterFragment extends Fragment implements AdapterView.OnItemClickL
                     }
                 });
 
-        LinearLayout linearLayoutSortBy = (LinearLayout)v.findViewById(R.id
-                .fragment_filter_sort_by);
+        LinearLayout linearLayoutSortBy = (LinearLayout)v.findViewById(
+                R.id.fragment_filter_sort_by);
+        LinearLayout linearLayoutSortByParent = (LinearLayout)v.findViewById(
+                R.id.fragment_filter_sort_by_parent);
         textViewSortOption = (TextView)v.findViewById(R.id.fragment_filter_displayed_sort_option);
         listPopupWindow = new ListPopupWindow(getContext());
         listPopupWindow.setAdapter(new ArrayAdapter<>(getContext(), R.layout.list_drop_down_item,
@@ -92,7 +94,7 @@ public class FilterFragment extends Fragment implements AdapterView.OnItemClickL
         listPopupWindow.setModal(true);
         listPopupWindow.setOnItemClickListener(this);
 
-        linearLayoutSortBy.setOnClickListener(new View.OnClickListener() {
+        linearLayoutSortByParent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String sortOption = (String)textViewSortOption.getText();

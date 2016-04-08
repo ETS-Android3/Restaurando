@@ -325,7 +325,7 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
         editText.requestFocus();
         final InputMethodManager inputMethodManager = (InputMethodManager) getActivity()
                 .getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, InputMethodManager.HIDE_IMPLICIT_ONLY);
+        inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, 0);
 
         editText.setText(spinnerAdapter.getTitle());
     }
@@ -360,7 +360,7 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
         setRenameVisibility(false);
         final InputMethodManager inputMethodManager = (InputMethodManager) getActivity()
                 .getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, 0);
+        inputMethodManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken(), 0);
     }
 
     /**

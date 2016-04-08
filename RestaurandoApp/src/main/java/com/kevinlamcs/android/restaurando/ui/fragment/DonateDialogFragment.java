@@ -53,7 +53,7 @@ public class DonateDialogFragment extends DialogFragment {
 
     private IabHelper iabHelper;
 
-    AlertDialog alertDialog;
+    private AlertDialog alertDialog;
 
     private String donationChoice;
 

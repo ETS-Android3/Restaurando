@@ -2,7 +2,7 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="SPLITTER_PROPORTION" value="0.49874267" />
-    <option name="SCOPE_TYPE" value="8" />
+    <option name="SCOPE_TYPE" value="3" />
     <option name="CUSTOM_SCOPE_NAME" value="Module 'RestaurandoApp'" />
   </component>
   <component name="AndroidLayouts">
@@ -44,209 +44,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="435221ab-9d35-4f19-a938-63138934f314" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_button.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-xhdpi/dialog_background.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-mdpi/five_star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xhdpi/five_star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-xhdpi/float_button1_shadowp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-xhdpi/float_button_shadow1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-xhdpi/ic_reloj_max.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-hdpi/sprite_check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-ldpi/sprite_check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-mdpi/sprite_check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-xhdpi/sprite_check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable-xxhdpi/sprite_check.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-mdpi/zero_star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/androidTest/java/com/gc/materialdesign/ApplicationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/AutoHideButtonFloat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/Button.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ButtonFlat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ButtonFloat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ButtonFloatSmall.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ButtonIcon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ButtonRectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/Card.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/CheckBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/widgets/ColorSelector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/CustomView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/widgets/Dialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/test/java/com/kevinlamcs/android/restaurando/FavoritesListTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/widget/InsetDivider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/LayoutRipple.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ProgressBarCircularIndeterminate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ProgressBarDeterminate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ProgressBarIndeterminate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ProgressBarIndeterminateDeterminate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/widgets/ProgressDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/application/RestaurandoApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/database/RestaurantListing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/ScrollView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/SearchFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/Slider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/widgets/SnackBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/views/Switch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/ToolbarSpinnerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/java/com/gc/materialdesign/utils/Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/YelpViewActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/actionbar_transparent_gradient.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/activity_add.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/values/attributes.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_button_float.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_button_rectangle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_checkbox.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_checkbox_check.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_checkbox_uncheck.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_progress.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_switch_ball_uncheck.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/background_transparent.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/layout/color_selector.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/layout/dialog.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/anim/dialog_main_hide_amination.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/anim/dialog_main_show_amination.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/anim/dialog_root_hide_amin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/anim/dialog_root_show_amin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_add_restaurant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_favorites_restaurant_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_search_restaurant_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/gradle.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/inset_divider.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/menu/nav_drawer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/layout/number_indicator_spinner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/layout/progress_dialog.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/anim/progress_indeterminate_animation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/shadow_down.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/drawable/shadow_right.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/layout/snackbar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/anim/snackbar_hide_animation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/anim/snackbar_show_animation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/spinner_toolbar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/spinner_toolbar_list_drop_down_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/styles.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/com_amulyakhare_textdrawable_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/scribe_1_3_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantBaseHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantListing.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FavoritesAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/SearchFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/utils/BitmapUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/utils/TextStyleUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nearby.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/actionbar_clear_gradient.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bill_up_close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/button_tool_tip_custom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_fragment_category.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_restaurant.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites_restaurant_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search_restaurant_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_favorites.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_search.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/search_view_location.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar_action_bar_shadow.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_favorites_drawer.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/search_bottom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/search_top.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/test/java/com/kevinlamcs/android/restaurando/ExampleUnitTest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="$PROJECT_DIR$/RestaurandoApp/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/RestaurandoApp/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/proguard-rules.pro" afterPath="$PROJECT_DIR$/RestaurandoApp/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/kevinlamcs/android/restaurando/ApplicationTest.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/androidTest/java/com/kevinlamcs/android/restaurando/ApplicationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/assets/font/Roboto-Medium.ttf" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/assets/fonts/Roboto-Medium.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/assets/font/Roboto-Regular.ttf" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/assets/fonts/Roboto-Regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantCursorWrapper.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/database/RestaurantCursorWrapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/Database/RestaurantDbSchema.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/database/RestaurantDbSchema.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/operations/ShakeDetector.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/operations/ShakeDetector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/operations/TwoStepOAuth.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/operations/TwoStepOAuth.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/AddActivity.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/AddActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FilterActivity.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FilterActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/InfoActivity.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/InfoActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/SearchActivity.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/SearchActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/root/SingleFragmentActivity.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/root/SingleFragmentActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/FilterAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/SearchAdapter.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/SearchAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DialogCategoryFragment.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/CategoryDialogFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/model/FilterOptions.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Thought.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Thought.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Yelp.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Yelp.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/utils/LocationUtils.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/utils/LocationUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/kevinlamcs/android/restaurando/utils/StringManipulationUtils.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/utils/StringManipulationUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/add_done.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/done.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/add_thought.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/add_thought.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/check_randomize.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/check_randomize.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/filter.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/filter.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/five_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/five_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/four_point_five_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/four_point_five_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/four_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/four_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/one_point_five_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/one_point_five_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/one_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/one_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/remove_thought.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/remove_thought.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/save.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/save.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/search.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/search.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/three_point_five_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/three_point_five_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/three_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/three_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/two_point_five_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/two_point_five_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/two_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/two_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/zero_star.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/zero_star.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/actionbar_shadow.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/actionbar_shadow.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_favorites.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/activity_favorites.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_fragment_container.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/activity_fragment_container.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/coordinator_favorites.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/coordinator_favorites.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_filter.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_drop_down_item.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/list_drop_down_item.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_filter.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/list_item_filter.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_favorites.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/nav_header_favorites.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/search_view_suggestions_list_item.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/search_view_suggestions_list_item.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/add.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/menu/add.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/favorites.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/menu/favorites.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/filter.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/menu/filter.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-hdpi/save.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-hdpi/save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-mdpi/save.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-mdpi/save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xhdpi/save.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xhdpi/save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/save.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi/save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxxhdpi/save.png" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxxhdpi/save.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DonateDialogFragment.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DonateDialogFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/dimens.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml" afterPath="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Restaurando.iws" />
@@ -316,91 +127,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/AndroidManifest.xml">
+      <file leaf-file-name="Restaurant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DonateDialogFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DonateDialogFragment.java">
+      <file leaf-file-name="AddFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3438#3743#0" expanded="true" />
-                <element signature="e#3742#3743#0" expanded="true" />
-                <element signature="e#4217#5410#0" expanded="true" />
-                <element signature="e#4514#5364#0" expanded="true" />
-                <element signature="e#5363#5364#0" expanded="true" />
-                <element signature="e#5409#5410#0" expanded="true" />
-                <element signature="e#5512#7308#0" expanded="true" />
-                <element signature="e#7307#7308#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="donate_button.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/donate_button.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="89" selection-start-line="2" selection-start-column="89" selection-end-line="2" selection-end-column="89" />
+              <caret line="175" column="63" selection-start-line="175" selection-start-column="63" selection-end-line="175" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/values/colors.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoritesFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InfoFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32258064">
-              <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="282" column="65" selection-start-line="282" selection-start-column="65" selection-end-line="282" selection-end-column="65" />
               <folding>
-                <element signature="e#12487#12488#0" expanded="true" />
-                <element signature="e#12527#12528#0" expanded="true" />
+                <element signature="e#2417#2418#0" expanded="true" />
+                <element signature="e#2458#2459#0" expanded="true" />
+                <element signature="e#6937#6998#0" expanded="true" />
+                <element signature="e#11968#12004#0" expanded="true" />
+                <element signature="e#12726#12727#0" expanded="true" />
+                <element signature="e#12766#12767#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FavoritesActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java">
+      <file leaf-file-name="selector_button.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/selector_button.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="6" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="selector_list_item_favorites.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/selector_list_item_favorites.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -409,23 +184,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/build.gradle">
+      <file leaf-file-name="selector_list_item_search.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/selector_list_item_search.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_filter.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.83870965">
+              <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
               <folding>
-                <marker date="1459884108826" expanded="true" signature="638:1400" placeholder="{...}" />
+                <element signature="e#1469#1504#0" expanded="true" />
+                <element signature="e#3821#3854#0" expanded="true" />
+                <element signature="e#3891#3924#0" expanded="true" />
+                <element signature="e#5407#5439#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proguard-rules.pro" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RestaurandoApp/proguard-rules.pro">
+      <file leaf-file-name="FilterFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.3820034">
+              <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+              <folding>
+                <element signature="e#3823#4529#0" expanded="true" />
+                <element signature="e#4528#4529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -5313,10 +5117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/utils/LocationUtils.java" />
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/utils/StringManipulationUtils.java" />
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/actionbar_clear_gradient.xml" />
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/actionbar_shadow.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/actionbar_transparent_gradient.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/inset_divider.xml" />
@@ -5332,7 +5132,6 @@
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/dialog_fragment_category.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_add_restaurant.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_favorites_restaurant_list.xml" />
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_search_restaurant_list.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_yelpview.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/how_to_instructions.xml" />
@@ -5340,7 +5139,6 @@
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/list_item_favorites.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/list_item_favorites_subheader.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/list_item_filter.xml" />
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/adapter/SearchAdapter.java" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/list_item_search.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/nav_header_favorites.xml" />
@@ -5351,7 +5149,6 @@
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/menu/add.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/menu/filter.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/menu/favorites.xml" />
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/dimens.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/strings.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/utils/Base64Decoder.java" />
@@ -5359,11 +5156,18 @@
         <option value="$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/build.gradle" />
         <option value="$PROJECT_DIR$/RestaurandoApp/libraries/TextDrawableMaterialColors/build.gradle" />
         <option value="$PROJECT_DIR$/RestaurandoApp/proguard-rules.pro" />
-        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/donate_button.xml" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DonateDialogFragment.java" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java" />
         <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/selector_not_list.xml" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/dimens.xml" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml" />
+        <option value="$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java" />
       </list>
     </option>
   </component>
@@ -5416,7 +5220,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -5533,6 +5337,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurandoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -5716,6 +5550,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurandoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restaurando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurandoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -5855,6 +5737,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Restaurando" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurandoApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restaurando" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fragment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -5907,7 +5815,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="163" />
     <property name="android.project.structure.last.selected" value="RestaurandoApp" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="178" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/RestaurandoApp" />
     <property name="ExportApk.Flavors" value="" />
@@ -5915,11 +5823,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxxhdpi" />
-      <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xhdpi" />
-      <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-mdpi" />
       <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-mdpi" />
+      <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxhdpi" />
+      <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable-xxxhdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/RestaurandoApp/src/main/res" />
@@ -6254,37 +6162,37 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32546374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54119545" sideWeight="0.46602717" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49434572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54119545" sideWeight="0.5339728" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.49243027" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48465267" sideWeight="0.5271111" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33837837" sideWeight="0.5123239" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8384491" sideWeight="0.50278884" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979593" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48465267" sideWeight="0.5271111" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.49243027" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32570422" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24864864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979593" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2326139" sideWeight="0.48767605" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33602583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32471728" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32148626" sideWeight="0.49721116" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49434572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8384491" sideWeight="0.50278884" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24864864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39579967" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="65" y="80" width="1301" height="716" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32247558" sideWeight="0.49721116" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -6303,266 +6211,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java</url>
-          <line>318</line>
+          <line>326</line>
           <properties />
           <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/utils/StringManipulationUtils.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="355" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="355" />
+      <option name="time" value="356" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/libraries/MaterialDesign/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04007286">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/activity_yelpview.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.411765">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/coordinator_favorites.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.705882">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="e#1362#1381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/dialog_donate_title.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.3529415">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#359#395#0" expanded="false" />
-            <element signature="e#425#461#0" expanded="false" />
-            <element signature="e#489#525#0" expanded="false" />
-            <element signature="e#554#590#0" expanded="false" />
-            <element signature="e#620#656#0" expanded="false" />
-            <element signature="e#687#730#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/activity_fragment_container.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.64705884">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding>
-            <element signature="e#313#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/activity_favorites.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.058824">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/dialog_fragment_category.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.735294">
-          <caret line="57" column="89" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="89" />
-          <folding>
-            <element signature="e#359#391#0" expanded="true" />
-            <element signature="e#422#461#0" expanded="true" />
-            <element signature="e#490#522#0" expanded="true" />
-            <element signature="e#552#584#0" expanded="true" />
-            <element signature="e#639#666#0" expanded="true" />
-            <element signature="e#802#847#0" expanded="true" />
-            <element signature="e#1086#1122#0" expanded="true" />
-            <element signature="e#1209#1253#0" expanded="true" />
-            <element signature="e#1564#1602#0" expanded="true" />
-            <element signature="e#1716#1762#0" expanded="true" />
-            <element signature="e#1801#1848#0" expanded="true" />
-            <element signature="e#1892#1939#0" expanded="true" />
-            <element signature="e#1981#2028#0" expanded="true" />
-            <element signature="e#2070#2117#0" expanded="true" />
-            <element signature="e#2162#2209#0" expanded="true" />
-            <element signature="e#2252#2304#0" expanded="true" />
-            <element signature="e#2348#2400#0" expanded="true" />
-            <element signature="e#2538#2579#0" expanded="true" />
-            <element signature="e#2868#2914#0" expanded="true" />
-            <element signature="e#2953#3000#0" expanded="true" />
-            <element signature="e#3044#3097#0" expanded="true" />
-            <element signature="e#3139#3192#0" expanded="true" />
-            <element signature="e#3234#3281#0" expanded="true" />
-            <element signature="e#3326#3373#0" expanded="true" />
-            <element signature="e#3416#3463#0" expanded="true" />
-            <element signature="e#3753#3794#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_add_restaurant.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-104.088234">
-          <caret line="163" column="57" selection-start-line="163" selection-start-column="57" selection-end-line="163" selection-end-column="57" />
-          <folding>
-            <element signature="e#493#531#0" expanded="true" />
-            <element signature="e#765#796#0" expanded="true" />
-            <element signature="e#1288#1319#0" expanded="true" />
-            <element signature="e#1359#1390#0" expanded="true" />
-            <element signature="e#1422#1454#0" expanded="true" />
-            <element signature="e#1494#1525#0" expanded="true" />
-            <element signature="e#1563#1594#0" expanded="true" />
-            <element signature="e#1629#1660#0" expanded="true" />
-            <element signature="e#2318#2357#0" expanded="true" />
-            <element signature="e#2394#2433#0" expanded="true" />
-            <element signature="e#2469#2509#0" expanded="true" />
-            <element signature="e#2547#2587#0" expanded="true" />
-            <element signature="e#2931#2965#0" expanded="true" />
-            <element signature="e#3182#3222#0" expanded="true" />
-            <element signature="e#3343#3383#0" expanded="true" />
-            <element signature="e#3764#3798#0" expanded="true" />
-            <element signature="e#3837#3867#0" expanded="true" />
-            <element signature="e#3907#3937#0" expanded="true" />
-            <element signature="e#3977#4007#0" expanded="true" />
-            <element signature="e#4045#4075#0" expanded="true" />
-            <element signature="e#4537#4567#0" expanded="true" />
-            <element signature="e#4607#4637#0" expanded="true" />
-            <element signature="e#4677#4707#0" expanded="true" />
-            <element signature="e#4745#4775#0" expanded="true" />
-            <element signature="e#5235#5262#0" expanded="true" />
-            <element signature="e#5303#5330#0" expanded="true" />
-            <element signature="e#5757#5788#0" expanded="true" />
-            <element signature="e#5831#5858#0" expanded="true" />
-            <element signature="e#6012#6026#0" expanded="true" />
-            <element signature="e#6457#6494#0" expanded="true" />
-            <element signature="e#6537#6564#0" expanded="true" />
-            <element signature="e#6719#6739#0" expanded="true" />
-            <element signature="e#7163#7194#0" expanded="true" />
-            <element signature="e#7237#7264#0" expanded="true" />
-            <element signature="e#7359#7373#0" expanded="true" />
-            <element signature="e#7825#7855#0" expanded="true" />
-            <element signature="e#7892#7922#0" expanded="true" />
-            <element signature="e#7958#7989#0" expanded="true" />
-            <element signature="e#8027#8058#0" expanded="true" />
-            <element signature="e#8191#8209#0" expanded="true" />
-            <element signature="e#8358#8388#0" expanded="true" />
-            <element signature="e#8427#8457#0" expanded="true" />
-            <element signature="e#8501#8542#0" expanded="true" />
-            <element signature="e#8922#8958#0" expanded="true" />
-            <element signature="e#8997#9033#0" expanded="true" />
-            <element signature="e#9071#9107#0" expanded="true" />
-            <element signature="e#9147#9183#0" expanded="true" />
-            <element signature="e#9224#9267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_favorites_restaurant_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7941177">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding>
-            <element signature="e#829#859#0" expanded="true" />
-            <element signature="e#1069#1090#0" expanded="true" />
-            <element signature="e#1363#1396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9705882">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="e#556#589#0" expanded="true" />
-            <element signature="e#622#657#0" expanded="true" />
-            <element signature="e#691#726#0" expanded="true" />
-            <element signature="e#908#931#0" expanded="true" />
-            <element signature="e#1248#1281#0" expanded="true" />
-            <element signature="e#1322#1358#0" expanded="true" />
-            <element signature="e#1469#1504#0" expanded="true" />
-            <element signature="e#1536#1571#0" expanded="true" />
-            <element signature="e#2080#2103#0" expanded="true" />
-            <element signature="e#2144#2167#0" expanded="true" />
-            <element signature="e#2380#2403#0" expanded="true" />
-            <element signature="e#2440#2469#0" expanded="true" />
-            <element signature="e#2507#2536#0" expanded="true" />
-            <element signature="e#2696#2710#0" expanded="true" />
-            <element signature="e#2997#3020#0" expanded="true" />
-            <element signature="e#3057#3086#0" expanded="true" />
-            <element signature="e#3124#3153#0" expanded="true" />
-            <element signature="e#3729#3762#0" expanded="true" />
-            <element signature="e#3799#3832#0" expanded="true" />
-            <element signature="e#4071#4104#0" expanded="true" />
-            <element signature="e#4137#4176#0" expanded="true" />
-            <element signature="e#4210#4249#0" expanded="true" />
-            <element signature="e#4393#4413#0" expanded="true" />
-            <element signature="e#4691#4724#0" expanded="true" />
-            <element signature="e#4757#4796#0" expanded="true" />
-            <element signature="e#4830#4869#0" expanded="true" />
-            <element signature="e#5010#5024#0" expanded="true" />
-            <element signature="e#5260#5292#0" expanded="true" />
-            <element signature="e#5321#5359#0" expanded="true" />
-            <element signature="e#5389#5427#0" expanded="true" />
-            <element signature="e#5597#5623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_search_restaurant_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.32353">
-          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-          <folding>
-            <element signature="e#830#860#0" expanded="true" />
-            <element signature="e#1034#1066#0" expanded="true" />
-            <element signature="e#1511#1548#0" expanded="true" />
-            <element signature="e#2062#2092#0" expanded="true" />
-            <element signature="e#2266#2293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_yelpview.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -6660,6 +6327,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6814,22 +6482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="75" selection-start-line="1" selection-start-column="4" selection-end-line="97" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="62.59375">
@@ -6935,7 +6587,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding>
-            <marker date="1459884108826" expanded="true" signature="638:1400" placeholder="{...}" />
+            <marker date="1459884108826" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -6964,24 +6616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DonateDialogFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3438#3743#0" expanded="true" />
-            <element signature="e#3742#3743#0" expanded="true" />
-            <element signature="e#4217#5410#0" expanded="true" />
-            <element signature="e#4514#5364#0" expanded="true" />
-            <element signature="e#5363#5364#0" expanded="true" />
-            <element signature="e#5409#5410#0" expanded="true" />
-            <element signature="e#5512#7308#0" expanded="true" />
-            <element signature="e#7307#7308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/activity/FavoritesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -6990,21 +6624,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java">
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/DonateDialogFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+          <caret line="99" column="79" selection-start-line="99" selection-start-column="79" selection-end-line="99" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3446#3751#0" expanded="false" />
+            <element signature="e#3750#3751#0" expanded="false" />
+            <element signature="e#4225#5418#0" expanded="false" />
+            <element signature="e#4522#5372#0" expanded="false" />
+            <element signature="e#5371#5372#0" expanded="false" />
+            <element signature="e#5417#5418#0" expanded="false" />
+            <element signature="e#5520#7316#0" expanded="false" />
+            <element signature="e#7315#7316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FavoritesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.516129">
+          <caret line="327" column="8" selection-start-line="327" selection-start-column="8" selection-end-line="327" selection-end-column="8" />
+          <folding>
+            <element signature="e#11824#11825#0" expanded="false" />
+            <element signature="e#11860#11861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/utils/StringManipulationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Yelp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/operations/YelpSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="151" column="13" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/model/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/AddFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="175" column="63" selection-start-line="175" selection-start-column="63" selection-end-line="175" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/InfoFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32258064">
-          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="282" column="65" selection-start-line="282" selection-start-column="65" selection-end-line="282" selection-end-column="65" />
           <folding>
-            <element signature="e#12487#12488#0" expanded="true" />
-            <element signature="e#12527#12528#0" expanded="true" />
+            <element signature="e#2417#2418#0" expanded="true" />
+            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="e#6937#6998#0" expanded="true" />
+            <element signature="e#11968#12004#0" expanded="true" />
+            <element signature="e#12726#12727#0" expanded="true" />
+            <element signature="e#12766#12767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/selector_list_item_favorites.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/selector_button.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="6" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="45" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/drawable/selector_list_item_search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/values-v21/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77165353">
+          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/res/layout/fragment_filter.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.83870965">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+          <folding>
+            <element signature="e#1469#1504#0" expanded="true" />
+            <element signature="e#3821#3854#0" expanded="true" />
+            <element signature="e#3891#3924#0" expanded="true" />
+            <element signature="e#5407#5439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestaurandoApp/src/main/java/com/kevinlamcs/android/restaurando/ui/fragment/FilterFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3820034">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+          <folding>
+            <element signature="e#3823#4529#0" expanded="true" />
+            <element signature="e#4528#4529#0" expanded="true" />
           </folding>
         </state>
       </provider>

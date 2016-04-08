@@ -164,15 +164,7 @@ public class InfoFragment extends Fragment {
         if (LocationUtils.isConnectedToInternet(getContext())) {
             new BackgroundYelpSearchByBusiness(view).execute(restaurant.getId());
         } else {
-            reviewsAndRatings.setVisibility(View.GONE);
-            streetAddress.setVisibility(View.GONE);
-            cityStateZip.setVisibility(View.GONE);
-            displayDefaultImage(view);
-            setUpInfoButtons(view);
-
-            Snackbar snackBar = Snackbar.make(parentContainer, R.string.no_internet_limited_details,
-                    Snackbar.LENGTH_LONG);
-            snackBar.show();
+            displayLimitedInformation(view);
         }
     }
 
@@ -287,6 +279,22 @@ public class InfoFragment extends Fragment {
     }
 
     /**
+     * Shows limited restaurant information if Yelp does not have the image url.
+     * @param view - used to display restaurant image and buttons
+     */
+    private void displayLimitedInformation(View view) {
+        reviewsAndRatings.setVisibility(View.GONE);
+        streetAddress.setVisibility(View.GONE);
+        cityStateZip.setVisibility(View.GONE);
+        displayDefaultImage(view);
+        setUpInfoButtons(view);
+
+        Snackbar snackBar = Snackbar.make(parentContainer, R.string.no_internet_limited_details,
+                Snackbar.LENGTH_LONG);
+        snackBar.show();
+    }
+
+    /**
      * Sends restaurant name to Google Analytics.
      */
     private void sendInfoName() {
@@ -318,9 +326,13 @@ public class InfoFragment extends Fragment {
         protected void onPostExecute(Restaurant restaurant) {
             InfoFragment.this.restaurant = restaurant;
 
-            displayRestaurantImage();
-            setRestaurantDetails();
-            setUpInfoButtons(view);
+            if (restaurant.getImageUrl() != null) {
+                displayRestaurantImage();
+                setRestaurantDetails();
+                setUpInfoButtons(view);
+            } else {
+                displayLimitedInformation(view);
+            }
         }
     }
 }
