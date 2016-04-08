@@ -268,11 +268,15 @@ public class SearchFragment extends Fragment {
     private void showProgressBar(boolean visible) {
         SearchActivity searchActivity = ((SearchActivity)getActivity());
         if (visible) {
-            circularProgressBar.setVisibility(View.VISIBLE);
-            searchActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+            if (searchActivity != null) {
+                circularProgressBar.setVisibility(View.VISIBLE);
+                searchActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+            }
         } else {
-            searchActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            circularProgressBar.setVisibility(View.GONE);
+            if (searchActivity != null) {
+                searchActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+                circularProgressBar.setVisibility(View.GONE);
+            }
         }
     }
 

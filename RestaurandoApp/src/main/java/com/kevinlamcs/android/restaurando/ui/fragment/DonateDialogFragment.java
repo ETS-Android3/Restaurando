@@ -174,7 +174,7 @@ public class DonateDialogFragment extends DialogFragment {
         super.onDestroy();
         if (iabHelper != null) {
             iabHelper.dispose();
+            iabHelper = null;
         }
-        iabHelper = null;
     }
 }
