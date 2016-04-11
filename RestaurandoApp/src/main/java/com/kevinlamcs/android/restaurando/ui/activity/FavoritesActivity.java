@@ -24,6 +24,8 @@ import com.kevinlamcs.android.restaurando.R;
 import com.kevinlamcs.android.restaurando.ui.fragment.DonateDialogFragment;
 import com.kevinlamcs.android.restaurando.ui.fragment.FavoritesFragment;
 import com.kevinlamcs.android.restaurando.ui.activity.root.SingleFragmentActivity;
+import com.kevinlamcs.android.restaurando.utils.DecoderUtils;
+import com.kevinlamcs.android.restaurando.vending.IabHelper;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -34,7 +36,22 @@ public class FavoritesActivity extends SingleFragmentActivity implements Navigat
 
     private static final String TAG = "donate";
 
+    private static final String ENCODED_PUBLIC_KEY = "Dyg6J39eBCAhCA8UDDscJVUeUwkkKGUiJCIgJyRxahIMaT"
+            + "k3IQsiIGE6IDgyDUUDcWEADFIcADE0Yx5RFh9IBAcWcS0HLQVPC1gTBRNOAAcGNABWUw0KSnQHQCQGeig5LR0"
+            + "1Ez4GPDoOLFUFNklWHi0xLi5WdwY8OFgjGidDOTtvESg4ECdYA3FlJilSPiIBUjIvDkcOCw0OVloAVVJELApm"
+            + "GxYjS0gnSQoBAhQKLDAmWBkQc1orDCldESgFCBQ1GA8ZABE3RQI3IgQnUHUjEXNVMh8vWQ4NeCAhKCwkQRxcV"
+            + "RwmNQAdNFY7TQsPEDcnJiFwXEoVHhw8ciMaG0M2Ji0PXysPCBw0KhsLSnFbMl4BLQAkAwZMFgYRKCg1L0MqFy"
+            + "JAEBVFZGUAGF80Gz0tDlQkEhgoBD48ZHcADEghVQgSGgAoGyhMDxEhTwcWKhwQHVcBIiNVORojPRhWShE/N3ME"
+            + "Eh9CYAIWByJWUzJoPSYDAiAkPRsQAww0Gx4xCxB4B3E5MSM9KCE=";
+
+    private static final String DECODER_KEY = "Base64EncodedPublicKey decode RSA public key";
+
+
     private AlertDialog howToDialog;
+
+    private DonateDialogFragment donateDialogFragment;
+
+    private IabHelper iabHelper;
 
     @Override
     protected Fragment createFragment() {
@@ -49,8 +66,8 @@ public class FavoritesActivity extends SingleFragmentActivity implements Navigat
         Toolbar toolbar = (Toolbar) findViewById(R.id.activity_favorites_toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id
-                .activity_favorites_drawer_layout_container);
+        DrawerLayout drawer = (DrawerLayout) findViewById(
+                R.id.activity_favorites_drawer_layout_container);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -58,6 +75,10 @@ public class FavoritesActivity extends SingleFragmentActivity implements Navigat
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        String base64EncodedPublicKey = DecoderUtils.decode(ENCODED_PUBLIC_KEY, DECODER_KEY);
+        iabHelper = new IabHelper(this, base64EncodedPublicKey);
+        iabHelper.startSetup(null);
     }
 
     @Override
@@ -88,8 +109,8 @@ public class FavoritesActivity extends SingleFragmentActivity implements Navigat
 
         if (id == R.id.nav_donate) {
             CharSequence[] items = getResources().getStringArray(R.array.donation_values);
-            DialogFragment donateFragment = DonateDialogFragment.newInstance(items);
-            donateFragment.show(getSupportFragmentManager(), TAG);
+            donateDialogFragment = DonateDialogFragment.newInstance(items);
+            donateDialogFragment.show(getSupportFragmentManager(), TAG);
         } else if (id == R.id.how_to) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this,
                     R.style.AlertDialogRemoveList).setTitle(getString(R.string.title_how_to));
@@ -106,12 +127,33 @@ public class FavoritesActivity extends SingleFragmentActivity implements Navigat
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (donateDialogFragment != null) {
+            if (iabHelper.handleActivityResult(requestCode, resultCode, data)) {
+                super.onActivityResult(requestCode, resultCode, data);
+            }
+            donateDialogFragment = null;
+        }
+
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
         fragment.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (iabHelper != null) {
+            iabHelper.dispose();
+            iabHelper = null;
+        }
+    }
+
+    @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
+    public IabHelper getIabHelper() {
+        return iabHelper;
     }
 }

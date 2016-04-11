@@ -1,20 +1,33 @@
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 android {
+    signingConfigs {
+        Signature {
+            keyAlias 'KevinLamAndroidKey'
+            keyPassword '@ndr01d'
+            storeFile file('/home/kevin-lam/Work/Projects/Android Keystore/signature.jks')
+            storePassword 'Qw@s!1991'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-
     defaultConfig {
         applicationId "com.kevinlamcs.android.restaurando"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 18
+        versionName "1.0.17"
     }
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Signature
+        }
+    }
+    productFlavors {
+        ReleaseFlavor {
+            signingConfig signingConfigs.Signature
         }
     }
 }

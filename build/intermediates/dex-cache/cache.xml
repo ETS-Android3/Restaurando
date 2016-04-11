@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/home/kevin-lam/Work/Projects/Restaurando/RestaurandoApp/build/intermediates/exploded-aar/Restaurando.RestaurandoApp.libraries/TextDrawableMaterialColors/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="331655d7f77e632468ebbb74ae42cf618f200cdc">
-        <dex dex="/home/kevin-lam/Work/Projects/Restaurando/RestaurandoApp/build/intermediates/pre-dexed/debug/Restaurando.RestaurandoApp.libraries-TextDrawableMaterialColors-unspecified_a49d5d71d523891f7fe48cd1c3fa16e34b0f3641.jar" />
-    </item>
-
-</items>
+<items version="2" />

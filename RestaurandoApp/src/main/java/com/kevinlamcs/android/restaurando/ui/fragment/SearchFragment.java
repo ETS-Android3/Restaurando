@@ -16,6 +16,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -46,7 +47,7 @@ public class SearchFragment extends Fragment {
     private EditText editTextSearchLocation;
     private ImageButton imageButtonClearTerm;
     private ImageButton imageButtonClearLocation;
-    private FrameLayout circularProgressBar;
+    private RelativeLayout circularProgressBar;
     private RelativeLayout noConnectivityState;
     private RelativeLayout noResultState;
 
@@ -84,7 +85,7 @@ public class SearchFragment extends Fragment {
                 R.id.fragment_search_restaurant_list_empty_state);
         noResultState = (RelativeLayout)v.findViewById(
                 R.id.fragment_search_restaurant_list_error_search_state);
-        circularProgressBar = (FrameLayout)getActivity().findViewById(
+        circularProgressBar = (RelativeLayout)getActivity().findViewById(
                 R.id.activity_search_progress_bar_circular_query_yelp);
 
         if (LocationUtils.isConnectedToInternet(getContext())) {

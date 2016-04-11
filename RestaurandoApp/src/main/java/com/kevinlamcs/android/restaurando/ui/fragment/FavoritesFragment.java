@@ -245,6 +245,14 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
             filterOptions = data.getParcelableExtra(FilterFragment.EXTRA_FILTER);
             favoritesRestaurantListAdapter.setFilterOptions(filterOptions);
             favoritesRestaurantListAdapter.onFilter();
+        } else if (requestCode == REQUEST_DONATE && resultCode == Activity.RESULT_OK) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext(),
+                    R.style.AlertDialogRemoveList);
+            builder.setTitle(getContext().getString(R.string.donate_result_title));
+            builder.setMessage(getContext().getString(R.string.donate_result_message));
+            builder.setPositiveButton(getContext().getString(R.string.donate_result_positive_button)
+                    , null);
+            builder.show();
         }
     }
 
@@ -673,10 +681,9 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String jsonListRestaurantList = preferences.getString(PREF_LIST_LISTRESTAURANT_TITLES, "");
         Gson gson = new Gson();
-        Type collectionType = new TypeToken<List<String>>() {}.getType();
 
         if (!jsonListRestaurantList.equals("")) {
-            return gson.fromJson(jsonListRestaurantList, collectionType);
+            return gson.fromJson(jsonListRestaurantList, List.class);
         }
         return new ArrayList<>();
     }

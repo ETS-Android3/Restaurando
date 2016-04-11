@@ -68,5 +68,8 @@
     <string name="rename">Rename</string>
     <string name="remove">Remove</string>
     <string name="done">Done</string>
+    <string name="donate_result_title">Donation success</string>
+    <string name="donate_result_positive_button">OK</string>
+    <string name="donate_result_message">Thank you. Your support is greatly appreciated.</string>
 
 </resources>

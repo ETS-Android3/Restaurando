@@ -1,5 +1,6 @@
 package com.kevinlamcs.android.restaurando.ui.fragment;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.kevinlamcs.android.restaurando.R;
+import com.kevinlamcs.android.restaurando.ui.activity.FavoritesActivity;
 import com.kevinlamcs.android.restaurando.utils.DecoderUtils;
 import com.kevinlamcs.android.restaurando.vending.IabHelper;
 import com.kevinlamcs.android.restaurando.vending.IabResult;
@@ -34,16 +36,6 @@ public class DonateDialogFragment extends DialogFragment {
     private static final String SKU_DONATE_FIFTEEN = "donation_015";
     private static final String SKU_DONATE_TWENTY = "donation_020";
     private static final String SKU_DONATE_FIFTY = "donation_050";
-
-    private static final String ENCODED_PUBLIC_KEY = "Dyg6J39eBCAhCA8UDDscJVUeUwkkKGUiJCIgJyRxahIMaT"
-            + "k3IQsiIGE6IDgyDUUDcWEADFIcADE0Yx5RFh9IBAcWcS0HLQVPC1gTBRNOAAcGNABWUw0KSnQHQCQGeig5LR0"
-            + "1Ez4GPDoOLFUFNklWHi0xLi5WdwY8OFgjGidDOTtvESg4ECdYA3FlJilSPiIBUjIvDkcOCw0OVloAVVJELApm"
-            + "GxYjS0gnSQoBAhQKLDAmWBkQc1orDCldESgFCBQ1GA8ZABE3RQI3IgQnUHUjEXNVMh8vWQ4NeCAhKCwkQRxcV"
-            + "RwmNQAdNFY7TQsPEDcnJiFwXEoVHhw8ciMaG0M2Ji0PXysPCBw0KhsLSnFbMl4BLQAkAwZMFgYRKCg1L0MqFy"
-            + "JAEBVFZGUAGF80Gz0tDlQkEhgoBD48ZHcADEghVQgSGgAoGyhMDxEhTwcWKhwQHVcBIiNVORojPRhWShE/N3ME"
-            + "Eh9CYAIWByJWUzJoPSYDAiAkPRsQAww0Gx4xCxB4B3E5MSM9KCE=";
-
-    private static final String DECODER_KEY = "Base64EncodedPublicKey decode RSA public key";
 
     private enum Donations {
         DONATE_ONE, DONATE_TWO, DONATE_THREE, DONATE_FOUR,
@@ -75,17 +67,10 @@ public class DonateDialogFragment extends DialogFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String base64EncodedPublicKey = DecoderUtils.decode(ENCODED_PUBLIC_KEY, DECODER_KEY);
-        iabHelper = new IabHelper(getContext(), base64EncodedPublicKey);
-        iabHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {
-
-            @Override
-            public void onIabSetupFinished(IabResult result) {
-                if (!result.isSuccess()) {
-                    Log.d("Google Pay", "Problem setting up In-app Purchase: " + result);
-                }
-            }
-        });
+        FavoritesActivity activity = ((FavoritesActivity)getActivity());
+        if (activity != null) {
+            iabHelper = activity.getIabHelper();
+        }
     }
 
     @NonNull
@@ -107,13 +92,27 @@ public class DonateDialogFragment extends DialogFragment {
                                     public void onIabPurchaseFinished(IabResult result, Purchase info) {
                                         if (result.isFailure()) {
                                             Log.e("Purchase failed", "Error purchasing: " + result);
+                                            return;
                                         }
 
-                                        iabHelper.consumeAsync(info, new IabHelper.OnConsumeFinishedListener() {
-                                            @Override
-                                            public void onConsumeFinished(Purchase purchase, IabResult result) {
-                                            }
-                                        });
+                                        if (info.getSku().equals(SKU_DONATE_ONE)
+                                                || info.getSku().equals(SKU_DONATE_TWO)
+                                                || info.getSku().equals(SKU_DONATE_THREE)
+                                                || info.getSku().equals(SKU_DONATE_FOUR)
+                                                || info.getSku().equals(SKU_DONATE_FIVE)
+                                                || info.getSku().equals(SKU_DONATE_TEN)
+                                                || info.getSku().equals(SKU_DONATE_FIFTEEN)
+                                                || info.getSku().equals(SKU_DONATE_TWENTY)
+                                                || info.getSku().equals(SKU_DONATE_FIFTY)) {
+                                            iabHelper.consumeAsync(info, new IabHelper.OnConsumeFinishedListener() {
+                                                @Override
+                                                public void onConsumeFinished(Purchase purchase, IabResult result) {
+                                                    if (iabHelper == null) {
+                                                        return;
+                                                    }
+                                                }
+                                            });
+                                        }
                                     }
                                 }, "");
                     }
@@ -167,14 +166,5 @@ public class DonateDialogFragment extends DialogFragment {
         positiveButton.setEnabled(false);
         negativeButton.setTextColor(ContextCompat.getColorStateList(getContext(), R.drawable.donate_button));
         return alertDialog;
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        if (iabHelper != null) {
-            iabHelper.dispose();
-            iabHelper = null;
-        }
     }
 }
