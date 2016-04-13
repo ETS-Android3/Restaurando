@@ -2,6 +2,14 @@
 
 Restaurando is an Android application that allows its users to search for their favorite restaurants and add them to a personalized list. The app can then help decide on a location to eat from this list.
 
+## Motivation
+
+Whenever my friends and I wish to eat out, we always have trouble deciding on a restaurant. Everyone is "fine with anything". But when a suggestion is given, it is often rejected for one reason or another. This cycle of suggesting and rejecting goes on and, before its realize, an hour is wasted. This time wasting inspired me to create Restaurando in order to make the decision process quicker and less painful. 
+
+## Download
+
+<!-- Google Play !-->
+
 ## Usage
 
 > Finding the food delicious at a specific restaurant? 
@@ -38,14 +46,6 @@ You can create new favorite lists and add specific restaurants to those lists.
 1. Select "add" in the overflow drop down menu.
 2. Rename the list using the "rename" function.
 3. Remove the list using the "remove" function.
-
-## Motivation
-
-Whenever my friends and I wish to eat out, we always have trouble deciding on a restaurant. Everyone is "fine with anything". But when a suggestion is given, it is often rejected for one reason or another. This cycle of suggesting and rejecting goes on and, before its realize, an hour is wasted. This time wasting inspired me to create Restaurando in order to make the decision process quicker and less painful. 
-
-## Download
-
-<!-- Google Play !-->
 
 ## License
 
