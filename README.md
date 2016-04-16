@@ -8,7 +8,7 @@ Whenever my friends and I wish to eat out, we always have trouble deciding on a 
 
 ## Download
 
-<!-- Google Play !-->
+<a title="By Google Play (developer.android.com) [Public domain], via Wikimedia Commons" href="https://play.google.com/store/apps/details?id=com.kevinlamcs.android.restaurando&hl=en"><img width="128" alt="Get it on Google play" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Get_it_on_Google_play.svg/128px-Get_it_on_Google_play.svg.png"/></a>
 
 ## Usage
 
