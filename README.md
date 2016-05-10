@@ -4,7 +4,7 @@ Restaurando is an Android application that allows its users to search for their 
 
 ## Motivation
 
-Whenever my friends and I wish to eat out, we always have trouble deciding on a restaurant. Everyone is "fine with anything". But when a suggestion is given, it is often rejected for one reason or another. This cycle of suggesting and rejecting goes on and, before its realize, an hour is wasted. This time wasting inspired me to create Restaurando in order to make the decision process quicker and less painful. 
+Whenever my friends and I wish to eat out, we always have trouble deciding on a restaurant. Everyone is "fine with anything". But when a suggestion is given, it is often rejected for one reason or another. This cycle of suggesting and rejecting goes on and, before you realize it, an hour is wasted. This time wasting inspired me to create Restaurando in order to make the decision process quicker and less painful. 
 
 ## Download
 
