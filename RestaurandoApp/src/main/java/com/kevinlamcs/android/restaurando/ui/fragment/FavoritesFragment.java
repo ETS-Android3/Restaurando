@@ -1,5 +1,6 @@
 package com.kevinlamcs.android.restaurando.ui.fragment;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -64,6 +65,7 @@ import com.kevinlamcs.android.restaurando.ui.widget.InsetDivider;
 import com.kevinlamcs.android.restaurando.ui.widget.SameSelectionSpinner;
 import com.kevinlamcs.android.restaurando.ui.widget.Subheader;
 import com.kevinlamcs.android.restaurando.utils.DecoderUtils;
+import com.kevinlamcs.android.restaurando.utils.PermissionManager;
 import com.kevinlamcs.android.restaurando.vending.IabHelper;
 import com.kevinlamcs.android.restaurando.vending.IabResult;
 
@@ -97,6 +99,7 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
     private static final long VIBRATE_DURATION = 200;
 
     private static final int SINGLE_SEARCH_MAX_WIDTH = 10000;
+    private static final int WRITE_EXTERNAL_ACTION_CODE = 99;
 
     private Tracker tracker;
 
@@ -128,6 +131,7 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
     private RecyclerView.ItemDecoration subheader;
 
     private String currListName;
+    private PermissionManager permissionManager;
 
     /** Creates a new instance of the favorites list */
     public static FavoritesFragment newInstance() {
@@ -161,6 +165,9 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
         setUpSpinnerListRestaurantList();
         setUpSwipeToDelete();
         setUpFavoritesList();
+
+        permissionManager = PermissionManager.getInstance();
+        permissionManager.addPermissionAction(WRITE_EXTERNAL_ACTION_CODE, favoritesRestaurantListAdapter);
         return view;
     }
 
@@ -240,7 +247,10 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
 
         if (requestCode == REQUEST_RESTAURANT && resultCode == Activity.RESULT_OK) {
             Restaurant restaurant = data.getParcelableExtra(AddFragment.EXTRA_MY_RESTAURANT);
-            favoritesRestaurantListAdapter.addRestaurant(restaurant);
+            favoritesRestaurantListAdapter.setProspectiveRestaurant(restaurant);
+            permissionManager.setActivity(getActivity());
+            permissionManager.verifyPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, WRITE_EXTERNAL_ACTION_CODE);
+            //favoritesRestaurantListAdapter.addRestaurant(restaurant);
         } else if (requestCode == REQUEST_FILTER && resultCode == Activity.RESULT_OK) {
             filterOptions = data.getParcelableExtra(FilterFragment.EXTRA_FILTER);
             favoritesRestaurantListAdapter.setFilterOptions(filterOptions);
@@ -302,6 +312,10 @@ public class FavoritesFragment extends Fragment implements FavoritesAdapterCallb
                 singleSearchQuery = savedState.getString(STATE_SEARCH_QUERY);
             }
         }
+    }
+
+    public void onRequestPermissionsResult(int actionCode, String[] permissions, int[] grantResults) {
+        permissionManager.onRequestPermissionsResult(actionCode, permissions, grantResults);
     }
 
     /**

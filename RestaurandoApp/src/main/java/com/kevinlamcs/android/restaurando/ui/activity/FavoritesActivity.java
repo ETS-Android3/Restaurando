@@ -153,6 +153,14 @@ public class FavoritesActivity extends SingleFragmentActivity implements Navigat
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
+    @Override
+    public void onRequestPermissionsResult(int actionCode, String[] permissions, int[] grantResults) {
+        FavoritesFragment fragment = ((FavoritesFragment) (getSupportFragmentManager().findFragmentById(R.id.fragment_container)));
+        if (fragment != null) {
+            fragment.onRequestPermissionsResult(actionCode, permissions, grantResults);
+        }
+    }
+
     public IabHelper getIabHelper() {
         return iabHelper;
     }

@@ -34,7 +34,7 @@ import com.kevinlamcs.android.restaurando.ui.activity.YelpViewActivity;
 import com.kevinlamcs.android.restaurando.ui.adapter.FavoritesAdapter;
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
 import com.kevinlamcs.android.restaurando.ui.model.Thought;
-import com.kevinlamcs.android.restaurando.utils.LocationUtils;
+import com.kevinlamcs.android.restaurando.utils.ConnectionManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -60,6 +60,7 @@ public class InfoFragment extends Fragment {
     private TextView ratings;
     private TextView streetAddress;
     private TextView cityStateZip;
+    private ConnectionManager connectionManager;
 
     /**
      * Constructs a new InfoFragment.
@@ -76,6 +77,8 @@ public class InfoFragment extends Fragment {
 
         tracker = ((RestaurandoApplication)getActivity().getApplication()).getDefaultTracker();
         tracker.setScreenName("InfoFragment");
+
+        connectionManager = ConnectionManager.getInstance(getContext());
     }
 
     @Override
@@ -161,7 +164,7 @@ public class InfoFragment extends Fragment {
 
         // If internet, retrieve restaurant information and display it. Otherwise, set the default
         // image and hide the other restaurant details.
-        if (LocationUtils.isConnectedToInternet(getContext())) {
+        if (connectionManager.isConnectedToNetwork()) {
             new BackgroundYelpSearchByBusiness(view).execute(restaurant.getId());
         } else {
             displayLimitedInformation(view);
@@ -192,7 +195,7 @@ public class InfoFragment extends Fragment {
         ButtonRectangle buttonYelp = (ButtonRectangle) view.findViewById(
                 R.id.fragment_add_restaurant_button_rectangle_yelp);
 
-        if (LocationUtils.isConnectedToInternet(getContext())) {
+        if (connectionManager.isConnectedToNetwork()) {
             buttonDial.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

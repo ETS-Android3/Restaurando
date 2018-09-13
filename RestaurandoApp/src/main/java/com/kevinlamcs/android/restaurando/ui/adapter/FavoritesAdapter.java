@@ -20,6 +20,7 @@ import com.kevinlamcs.android.restaurando.ui.callback.FavoritesAdapterCallback;
 import com.kevinlamcs.android.restaurando.ui.model.FavoritesList;
 import com.kevinlamcs.android.restaurando.ui.model.FilterOptions;
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
+import com.kevinlamcs.android.restaurando.utils.PermissionAction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,7 @@ import java.util.Random;
 /**
  * Adapter class for manipulating the restaurant favorites list.
  */
-public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.FavoritesHolder> {
+public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.FavoritesHolder> implements PermissionAction {
 
     public static final String EXTRA_INFO = "com.kevinlamcs.android.restaurando.ui.adapter.extra.INFO";
 
@@ -43,6 +44,7 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
 
     private final FavoritesAdapterCallback favoritesAdapterCallback;
 
+    private Restaurant prospectiveRestaurant;
 
     /**
      * Initializes the favorites list.
@@ -301,6 +303,15 @@ public class FavoritesAdapter extends RecyclerView.Adapter<FavoritesAdapter.Favo
                 favoritesAdapterCallback.removeSubheaderCallback();
             }
         }
+    }
+
+    @Override
+    public void run() {
+        addRestaurant(prospectiveRestaurant);
+    }
+
+    public void setProspectiveRestaurant(Restaurant prospectiveRestaurant) {
+        this.prospectiveRestaurant = prospectiveRestaurant;
     }
 
     /**

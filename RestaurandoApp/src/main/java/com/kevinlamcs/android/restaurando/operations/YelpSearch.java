@@ -8,15 +8,14 @@ import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
 import com.kevinlamcs.android.restaurando.ui.model.Yelp;
 import com.kevinlamcs.android.restaurando.utils.StringManipulationUtils;
 
-import org.scribe.builder.ServiceBuilder;
-import org.scribe.model.OAuthRequest;
-import org.scribe.model.Response;
-import org.scribe.model.Token;
-import org.scribe.model.Verb;
-import org.scribe.oauth.OAuthService;
-
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 
 /**
@@ -24,29 +23,14 @@ import java.util.List;
  */
 public class YelpSearch {
 
-    private static final String API_HOST="api.yelp.com";
+    private static final String API_KEY="tnJAgLqwI38mXi2vrpLinai0232hK3aaLDe71wIhQ44sGr7-0C2kxlI0E6qon8mYPejC2NmcBZU_WvaIeuJ_pQwmzly9MupbII4jB1GBrmiid-aklhMlviHQZaaYW3Yx";
     private static final String DEFAULT_CATEGORY="food,restaurants";
-    private static final String SEARCH_PATH="/v2/search";
-    private static final String BUSINESS_PATH="/v2/business";
-
-    private static final String CONSUMER_KEY="VMnPW80yap0Soj7331tpXA";
-    private static final String CONSUMER_SECRET="QWs9PA2QuG8t_foYHUMW8FJywAg";
-    private static final String TOKEN="u3RArQ5DSBDxVdNMF8aWfVdzD234UpX1";
-    private static final String TOKEN_SECRET="FZ3EQG07rvI-gYOZyqLN7LfzuFc";
-
-    private final OAuthService service;
-    private final Token accessToken;
-
+    private OkHttpClient client;
     /**
      * Construct a new search on yelp with a token for authorization onto the Yelp server.
      */
     public YelpSearch() {
-        service = new ServiceBuilder()
-                .provider(TwoStepOAuth.class)
-                .apiKey(CONSUMER_KEY)
-                .apiSecret(CONSUMER_SECRET)
-                .build();
-        accessToken = new Token(TOKEN, TOKEN_SECRET);
+        this.client = new OkHttpClient();
     }
 
     /**
@@ -56,20 +40,30 @@ public class YelpSearch {
      * @return jsonString response by Yelp
      */
     private String searchForBusinessesByLocation(String term, String location) {
-        OAuthRequest request = createOAuthRequest(SEARCH_PATH);
+        HttpUrl.Builder builder = new HttpUrl.Builder()
+                .scheme("https")
+                .host("api.yelp.com")
+                .addPathSegment("v3")
+                .addPathSegment("businesses")
+                .addPathSegment("search");
+
+        builder.addQueryParameter("categories", DEFAULT_CATEGORY);
 
         if (term != null) {
-            request.addQuerystringParameter("term", term);
+            builder.addQueryParameter("term", term);
         }
 
-        if (SearchFragment.isSearchNearby) {
-            request.addQuerystringParameter("ll", location);
+        if (SearchFragment.isSearchNearby && location != null) {
+            String latitude = location.split(",")[0];
+            String longitude = location.split(",")[1];
+            builder.addQueryParameter("latitude", latitude);
+            builder.addQueryParameter("longitude", longitude);
         } else {
-            request.addQuerystringParameter("location", location);
+            builder.addQueryParameter("location", location);
         }
 
-        request.addQuerystringParameter("category_filter", DEFAULT_CATEGORY);
-        return sendRequestAndGetResponse(request);
+        HttpUrl url = builder.build();
+        return sendRequestForJSONStringResult(url);
     }
 
     /**
@@ -78,28 +72,40 @@ public class YelpSearch {
      * @return jsonString response by Yelp
      */
     private String searchByBusinessId(String businessId) {
-        OAuthRequest request = createOAuthRequest(BUSINESS_PATH + "/" + businessId);
-        return sendRequestAndGetResponse(request);
+        HttpUrl url = new HttpUrl.Builder()
+                .scheme("https")
+                .host("api.yelp.com")
+                .addPathSegment("v3")
+                .addPathSegment("businesses")
+                .addPathSegment(businessId)
+                .build();
+        return sendRequestForJSONStringResult(url);
     }
 
-    /**
-     * Initializes the query request.
-     * @param path - Url address to access Yelps' server
-     * @return OAuthRequest
-     */
-    private OAuthRequest createOAuthRequest(String path) {
-        return new OAuthRequest(Verb.GET, "http://" + API_HOST + path);
+
+    private String sendRequestForJSONStringResult(HttpUrl url) {
+        Request request = new Request.Builder()
+                .addHeader("Authorization", "Bearer " + API_KEY)
+                .url(url)
+                .build();
+        Response response = sendRequest(request);
+        return retrieveResponseResult(response);
     }
 
-    /**
-     * Sends the request over to Yelp.
-     * @param request - The request to send
-     * @return response from Yelp
-     */
-    private String sendRequestAndGetResponse(OAuthRequest request) {
-        service.signRequest(accessToken, request);
-        Response response = request.send();
-        return response.getBody();
+    private Response sendRequest(Request request) {
+        try {
+            return client.newCall(request).execute();
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
+    private String retrieveResponseResult(Response response) {
+        try {
+            return response.body().string();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     /**
@@ -114,27 +120,24 @@ public class YelpSearch {
 
         // Query Yelps' server for restaurant information
         String searchResponseJson = searchForBusinessesByLocation(term, location);
+        if (searchResponseJson == null) return restaurantList;
 
         // Store the information temporarily in the yelp object
         Gson gson = new GsonBuilder().create();
         Yelp yelp = gson.fromJson(searchResponseJson, Yelp.class);
 
-        if (yelp.total == 0) {
+        if (yelp.businesses.size() == 0) {
             return restaurantList;
         }
 
         // Go through the yelp object and fill out the restaurant object fields
-        for (Yelp.Businesses business : yelp.businesses) {
+        for (Yelp.Business business : yelp.businesses) {
             Restaurant restaurant = new Restaurant();
             restaurant.setName(business.name);
             restaurant.setId(business.id);
-            
             restaurant.setDisplayPhone(business.display_phone);
-
-            if (business.location.address.size() != 0) {
-                restaurant.setStreetAddress(business.location.address.get(0));
-            }
-            restaurant.setCategory((business.categories.get(0).get(0)));
+            restaurant.setStreetAddress(business.location.address1);
+            restaurant.setCategory((business.categories.get(0).title));
             if (restaurant.getCategory() != null) {
                 restaurant.setCategoryId(restaurant.getCategory().substring(0, 1));
             }
@@ -143,13 +146,9 @@ public class YelpSearch {
             restaurant.setRating(business.rating);
             restaurant.setReviewCount(business.review_count);
 
-            restaurant.setUrl(business.mobile_url);
+            restaurant.setUrl(business.url);
+            restaurant.setImageUrl(business.image_url);
 
-            if (business.image_url != null) {
-                String largeImage = StringManipulationUtils.replaceImageUrlSize
-                        (business.image_url);
-                restaurant.setImageUrl(largeImage);
-            }
             restaurantList.add(restaurant);
         }
 
@@ -164,18 +163,18 @@ public class YelpSearch {
      */
     public Restaurant queryYelpByBusiness(String businessId) {
         String searchResponseJson = searchByBusinessId(businessId);
+        System.out.println(searchResponseJson + "!!!!!!!!!!!!!!!!");
         Gson gson = new GsonBuilder().create();
-        Yelp.Businesses business = gson.fromJson(searchResponseJson, Yelp.Businesses.class);
+        Yelp.Business business = gson.fromJson(searchResponseJson, Yelp.Business.class);
 
         Restaurant restaurant = new Restaurant();
         restaurant.setName(business.name);
         restaurant.setId(business.id);
-        if (business.location.address.size() != 0) {
-            restaurant.setStreetAddress(business.location.address.get(0));
-        }
+        restaurant.setStreetAddress(business.location.address1);
+
         restaurant.setDisplayPhone(business.display_phone);
 
-        restaurant.setCategory((business.categories.get(0).get(0)));
+        restaurant.setCategory((business.categories.get(0).title));
         if (restaurant.getCategory() != null) {
             restaurant.setCategoryId(restaurant.getCategory().substring(0, 1));
         }
@@ -184,13 +183,9 @@ public class YelpSearch {
         restaurant.setRating(business.rating);
         restaurant.setReviewCount(business.review_count);
 
-        restaurant.setUrl(business.mobile_url);
+        restaurant.setUrl(business.url);
+        restaurant.setImageUrl(business.image_url);
 
-        if (business.image_url != null) {
-            String largeImage = StringManipulationUtils.replaceImageUrlSize
-                    (business.image_url);
-            restaurant.setImageUrl(largeImage);
-        }
         return restaurant;
     }
 }

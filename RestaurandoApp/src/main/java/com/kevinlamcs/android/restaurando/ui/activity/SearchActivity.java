@@ -40,4 +40,12 @@ public class SearchActivity extends SingleFragmentActivity {
             finish();
         }
     }
+
+    @Override
+    public void onRequestPermissionsResult(int actionCode, String[] permissions, int[] grantResults) {
+        SearchFragment fragment = ((SearchFragment) (getSupportFragmentManager().findFragmentById(R.id.fragment_container)));
+        if (fragment != null) {
+            fragment.onRequestPermissionsResult(actionCode, permissions, grantResults);
+        }
+    }
 }

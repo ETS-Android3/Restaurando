@@ -31,7 +31,7 @@ import com.kevinlamcs.android.restaurando.ui.activity.YelpViewActivity;
 import com.kevinlamcs.android.restaurando.ui.adapter.SearchAdapter;
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
 import com.kevinlamcs.android.restaurando.ui.model.Thought;
-import com.kevinlamcs.android.restaurando.utils.LocationUtils;
+import com.kevinlamcs.android.restaurando.utils.ConnectionManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +47,7 @@ public class AddFragment extends Fragment {
 
     private Restaurant restaurant;
     private TableLayout tableLayout;
+    private ConnectionManager connectionManager;
 
     /**
      * Constructs a new AddFragment.
@@ -60,6 +61,7 @@ public class AddFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        connectionManager = ConnectionManager.getInstance(getContext());
     }
 
     @Override
@@ -173,7 +175,7 @@ public class AddFragment extends Fragment {
                 R.id.fragment_add_restaurant_details);
 
         // If there is internet, retrieve the image. Otherwise display the placeholder.
-        if (restaurant.getImageUrl()!= null || LocationUtils.isConnectedToInternet(getContext())) {
+        if (restaurant.getImageUrl() != null || connectionManager.isConnectedToNetwork()) {
             Glide.with(this)
                     .load(restaurant.getImageUrl())
                     .listener(new RequestListener<String, GlideDrawable>() {

@@ -1,6 +1,7 @@
 package com.kevinlamcs.android.restaurando.ui.fragment;
 
 
+import android.Manifest;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -14,9 +15,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -28,7 +27,10 @@ import com.kevinlamcs.android.restaurando.operations.YelpSearch;
 import com.kevinlamcs.android.restaurando.ui.activity.SearchActivity;
 import com.kevinlamcs.android.restaurando.ui.adapter.SearchAdapter;
 import com.kevinlamcs.android.restaurando.ui.model.Restaurant;
-import com.kevinlamcs.android.restaurando.utils.LocationUtils;
+import com.kevinlamcs.android.restaurando.utils.ConnectionManager;
+import com.kevinlamcs.android.restaurando.utils.LocationDependent;
+import com.kevinlamcs.android.restaurando.utils.LocationManager;
+import com.kevinlamcs.android.restaurando.utils.PermissionManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,8 +39,9 @@ import java.util.List;
 /**
  * Fragment class for searching restaurants from Yelp.
  */
-public class SearchFragment extends Fragment {
+public class SearchFragment extends Fragment implements LocationDependent {
 
+    public static final int SEARCH_ACTION_CODE = 100;
     private static final String STATE_RESTAURANT_LIST = "RestaurantList state";
 
     private Tracker tracker;
@@ -55,6 +58,9 @@ public class SearchFragment extends Fragment {
     private List<Restaurant> restaurantList = new ArrayList<>();
 
     public static boolean isSearchNearby = true;
+    private ConnectionManager connectionManager;
+    private PermissionManager permissionManager;
+    private LocationManager locationManager;
 
     /**
      * Constructs a new SearchFragment.
@@ -71,6 +77,11 @@ public class SearchFragment extends Fragment {
 
         tracker = ((RestaurandoApplication)getActivity().getApplication()).getDefaultTracker();
         tracker.setScreenName("SearchFragment");
+        connectionManager = ConnectionManager.getInstance(getActivity().getApplicationContext());
+        permissionManager = PermissionManager.getInstance();
+        locationManager = LocationManager.getInstance(getActivity().getApplicationContext());
+        locationManager.setLocationDependent(this);
+        permissionManager.addPermissionAction(SEARCH_ACTION_CODE, locationManager);
     }
 
     @Override
@@ -88,7 +99,7 @@ public class SearchFragment extends Fragment {
         circularProgressBar = (RelativeLayout)getActivity().findViewById(
                 R.id.activity_search_progress_bar_circular_query_yelp);
 
-        if (LocationUtils.isConnectedToInternet(getContext())) {
+        if (connectionManager.isConnectedToNetwork()) {
             setVisibilityNoConnectivityState(false);
         } else {
             setVisibilityNoConnectivityState(true);
@@ -104,6 +115,10 @@ public class SearchFragment extends Fragment {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putParcelableArrayList(STATE_RESTAURANT_LIST, (ArrayList<Restaurant>) restaurantList);
+    }
+
+    public void onRequestPermissionsResult(int actionCode, String[] permissions, int[] grantResults) {
+        permissionManager.onRequestPermissionsResult(actionCode, permissions, grantResults);
     }
 
     /**
@@ -244,18 +259,19 @@ public class SearchFragment extends Fragment {
 
         showProgressBar(true);
 
-        if (LocationUtils.isConnectedToInternet(getContext())) {
-            String term = editTextSearchTerm.getText().toString();
-            String location = editTextSearchLocation.getText().toString();
+        String term = editTextSearchTerm.getText().toString();
+        String location = editTextSearchLocation.getText().toString();
+
+        if (connectionManager.isConnectedToNetwork()) {
             if (location.isEmpty()) {
-                location = LocationUtils.getNearbyGPSCoordinates(getContext());
                 isSearchNearby = true;
+                permissionManager.setActivity(getActivity());
+                permissionManager.verifyPermission(Manifest.permission.ACCESS_FINE_LOCATION, SEARCH_ACTION_CODE);
             } else {
                 isSearchNearby = false;
+                sendYelpSearch(term);
+                new BackgroundYelpSearchByLocation(getContext()).execute(term, location);
             }
-
-            sendYelpSearch(term);
-            new BackgroundYelpSearchByLocation(getContext()).execute(term, location);
         } else {
             showProgressBar(false);
             setVisibilityNoConnectivityState(true);
@@ -294,6 +310,13 @@ public class SearchFragment extends Fragment {
                 .build());
     }
 
+    @Override
+    public void withLocation(String location) {
+        String term = editTextSearchTerm.getText().toString();
+        sendYelpSearch(term);
+        new BackgroundYelpSearchByLocation(getContext()).execute(term, location);
+    }
+
     /**
      * AsyncTask class used to conduct the Yelp search.
      */
@@ -318,7 +341,7 @@ public class SearchFragment extends Fragment {
                 ((SearchAdapter) recyclerView.getAdapter()).setRestaurantList(SearchFragment.this.restaurantList);
             }
 
-            LocationUtils.endGPS(context);
+            locationManager.cancelLocationRequest();
             showProgressBar(false);
 
             if (restaurantList.isEmpty()) {

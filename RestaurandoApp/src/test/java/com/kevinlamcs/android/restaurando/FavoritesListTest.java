@@ -18,7 +18,7 @@ public class FavoritesListTest extends TestCase {
     public final void testRun() throws Exception {
         FavoritesList<Restaurant> favoritesList = new FavoritesList<>(new ArrayList());
         Restaurant restaurant1 = new Restaurant();
-        restaurant1.setName("The Blowhole");
+        restaurant1.setName("The Whale");
         restaurant1.setCategory("Seafood");
         restaurant1.setRating("5.0");
 

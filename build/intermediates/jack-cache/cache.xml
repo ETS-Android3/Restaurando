@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/kevin/.android/build-cache/4056871e3e9f853a260bbac5de82b4d9cf3ce115/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="e653e15e62e8a59ddd76cc7f827bf8bce38ae7bb">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-5029a13c98ab6cfbba6554b55b73526ecb37f5da.jar" />
+    </item>
+    <item
+        jar="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/libraries/MaterialDesign/build/intermediates/bundles/default/classes.jar"
+        revision="25.0.0"
+        sha1="a4e8f5c420fe995ebab926a353e0050133b8260b">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-eeee520e9313933d12f3ab3521af2ab8688e0350.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.11.0/75966e05a49046ca2ae734e5626f28837a8d1e82/okhttp-3.11.0.jar"
+        revision="25.0.0"
+        sha1="75966e05a49046ca2ae734e5626f28837a8d1e82">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/okhttp-3.11.0-c0f83ae1f13a75c365c6d07851a453453969dd9e.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/465cd3e38fbe057d2edb8afa4782ecdaba41a33b/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-a38e3e7ac4c191cad9c16f79708d22a89bbfc24a.jar" />
+    </item>
+    <item
+        jar="/home/kevin/Tools/android-sdk/platforms/android-23/optional/org.apache.http.legacy.jar"
+        revision="25.0.0"
+        sha1="017030d11901291abf8f83a812984276b643ea0f">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackRuntimeLibraries/ReleaseFlavor/debug/jars/8000/40/org.apache.http.legacy-e7fa2d3b58613db14a3e47d02cd56a8769ef9d9f.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/0e02b2b06cf77ee9217a3e3d109bb67dce0f8907/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-e65b6401dbaaa5d2ca499434ead1e175944cee7f.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/f271c43b1ba4496beea8fbe016e90d87b301440a/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-baa3e27f6a3111aecd50a1c9bd674745b087ecfa.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar"
+        revision="25.0.0"
+        sha1="102d7be47241d781ef95f1581d414b0943053130">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/okio-1.14.0-a31476bf7cce0fc2c8d579efd57f694de905f9fa.jar" />
+    </item>
+    <item
+        jar="/home/kevin/Tools/android-sdk/platforms/android-23/android.jar"
+        revision="25.0.0"
+        sha1="eee3e49de0e3c71c5f278ba7e4fe847483f9084c">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackRuntimeLibraries/ReleaseFlavor/debug/jars/8000/40/android-618a81e122df5d554a1e5e32c86a0d41f9c3c5db.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/glide-3.7.0-2098273dfef8be3b214226766bff9a4e7c856f23.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/org.scribe/scribe/1.3.7/583921bed46635d9f529ef5f14f7c9e83367bc6e/scribe-1.3.7.jar"
+        revision="25.0.0"
+        sha1="583921bed46635d9f529ef5f14f7c9e83367bc6e">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/scribe-1.3.7-6411bc000ae6523e10cccfe016a926d6f6fd5214.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/ce5a9f24159a54b229f5b5797b3799e34374fec9/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-e17a5ca0f4e7260e77b648def2d88548a63a30e3.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/4b0d3dd2c91f5ca9b17bc8c5996098f8986269a5/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="ad5bb101ced4d3939225c9b57e5a3d81547c1fbb">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-8fe4c576806ade27f7edb91e053bdf8fca5074b4.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/db0867f7dd9aa0334234b68e3e264f21138ceb71/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="9af3b9b8114e685291aa00e6572b0a9131244956">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-82ef74d11d4d22d1e8a1a769d214d5c4f2422d1f.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/a2f10cafd7e22159810712713406998cd438c72d/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-3f7dbea062f04e7adfc407fa19765e4daab183d7.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/30af41c0ec93b2e5c796281f26e6a66adaba4f6b/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-27e3bf3f3b8804e06a964bba8a436b68d94c2b31.jar" />
+    </item>
+    <item
+        jar="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/libraries/TextDrawableMaterialColors/build/intermediates/bundles/default/classes.jar"
+        revision="25.0.0"
+        sha1="d5abda147a23e0053949c77e98a494bd85554093">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-e38a38ed858d43a708bbd92ee51e62f69b0fd4cb.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        revision="25.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/gson-2.2.4-9adfa2985c458af70c5e82cfde52c754cf9743ce.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/d1357b5ee0eea241d29a5ec064803f5154b431ab/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="a5db9a2dd46d84285ef737f65030b74b6e8ee2a4">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-1312373c1baeec39b00029c3b898fbe9ad0fe0df.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/30af41c0ec93b2e5c796281f26e6a66adaba4f6b/output/jars/libs/internal_impl-23.4.0.jar"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/internal_impl-23.4.0-19536ba3520c97fa781c94672d9f8d27fb6a8f3e.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/a6b2dc9aee700062d178505d8e75172c218b638a/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-eadff9201137d01361baf7bb913388749b70da07.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/library-2.4.0-03c1c802cbf0a5bc86a945b018ce9592ee4c4741.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/c68a10c75e0f08d99c53e776af8f372a15ad9a39/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="c9ef45dcbd082cd63aac09a5e2cd443adb5df837">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-e90af166822647a4c226775702c991fd4f7c633e.jar" />
+    </item>
+    <item
+        jar="/home/kevin/.android/build-cache/87061400f0c3418d24a02d9db7b5f02c7afbcf41/output/jars/classes.jar"
+        revision="25.0.0"
+        sha1="611605b6b640c1558f9bdea41de8ff837ab68ca8">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/classes-9fa706a5f5d2235c6537c0406a04c99a133ed306.jar" />
+    </item>
+    <item
+        jar="/home/kevin/Tools/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/kevin/Work/AndroidApps/Restaurando/RestaurandoApp/build/intermediates/transforms/preJackPackagedLibraries/ReleaseFlavor/debug/jars/8000/1f/support-annotations-23.4.0-93a4a7613938d3af05036ce6c725998e7c9349e8.jar" />
+    </item>
+
+</items>

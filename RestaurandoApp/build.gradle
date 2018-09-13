@@ -14,9 +14,12 @@ android {
     defaultConfig {
         applicationId "com.kevinlamcs.android.restaurando"
         minSdkVersion 16
-        targetSdkVersion 23
-        versionCode 19
-        versionName "1.0.18"
+        targetSdkVersion 26
+        versionCode 32
+        versionName "1.0.31"
+        jackOptions {
+            enabled true
+        }
     }
     buildTypes {
         release {
@@ -29,6 +32,10 @@ android {
         ReleaseFlavor {
             signingConfig signingConfigs.Signature
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -49,6 +56,7 @@ dependencies {
     compile 'com.google.android.gms:play-services-analytics:8.4.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'org.scribe:scribe:1.3.7'
+    compile 'com.squareup.okhttp3:okhttp:3.11.0'
     compile 'uk.co.chrisjenx:calligraphy:2.1.0'
     compile project('libraries:TextDrawableMaterialColors')
     compile project('libraries:MaterialDesign')
