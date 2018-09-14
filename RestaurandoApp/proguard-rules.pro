@@ -13,6 +13,13 @@
 -printmapping mapping.txt
 -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 
+##---------------Configuration for okhttp3 ------------------------
+-dontwarn javax.annotation.**
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+-dontwarn okhttp3.internal.platform.ConscryptPlatform
+-dontwarn okio.**
+
 -allowaccessmodification
 -keepattributes *Annotation*
 -renamesourcefileattribute SourceFile

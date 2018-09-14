@@ -244,11 +244,25 @@ public class SearchFragment extends Fragment implements LocationDependent {
         });
     }
 
+    private void onSearch() {
+        String term = editTextSearchTerm.getText().toString();
+        String location = editTextSearchLocation.getText().toString();
+        if (location.isEmpty()) {
+            isSearchNearby = true;
+            permissionManager.setActivity(getActivity());
+            permissionManager.verifyPermission(Manifest.permission.ACCESS_FINE_LOCATION, SEARCH_ACTION_CODE);
+        } else {
+            isSearchNearby = false;
+            sendYelpSearch(term);
+            new BackgroundYelpSearchByLocation(getContext()).execute(term, location);
+        }
+    }
+
     /**
      * Conducts a search on Yelp when there is internet connection. Otherwise, display the
      * no connectivity layout.
      */
-    private void onSearch() {
+    /*private void onSearch() {
         // Hide keyboard
         InputMethodManager imm = (InputMethodManager)getContext().getSystemService(
                 Context.INPUT_METHOD_SERVICE);
@@ -276,7 +290,7 @@ public class SearchFragment extends Fragment implements LocationDependent {
             showProgressBar(false);
             setVisibilityNoConnectivityState(true);
         }
-    }
+    }*/
 
     /**
      * Display the circular progress bar which represents the loading of Yelp information.
@@ -329,6 +343,15 @@ public class SearchFragment extends Fragment implements LocationDependent {
         }
 
         @Override
+        protected void onPreExecute() {
+            hideKeyboard();
+            recyclerView.requestFocus();
+            showProgressBar(true);
+
+            checkConnectivity();
+        }
+
+        @Override
         protected List<Restaurant> doInBackground(String... params) {
             return new YelpSearch().queryYelpByLocation(params[0], params[1]);
         }
@@ -336,18 +359,33 @@ public class SearchFragment extends Fragment implements LocationDependent {
         @Override
         protected void onPostExecute(List<Restaurant> restaurantList) {
             SearchFragment.this.restaurantList = restaurantList;
-
-            if (isAdded()) {
-                ((SearchAdapter) recyclerView.getAdapter()).setRestaurantList(SearchFragment.this.restaurantList);
-            }
-
+            ((SearchAdapter) recyclerView.getAdapter()).setRestaurantList(restaurantList);
             locationManager.cancelLocationRequest();
+
             showProgressBar(false);
 
             if (restaurantList.isEmpty()) {
                 setVisibilityNoResultState();
             } else {
                 setVisibilityNoConnectivityState(false);
+            }
+        }
+
+        @Override
+        protected void onCancelled() {
+            showProgressBar(false);
+            setVisibilityNoConnectivityState(true);
+        }
+
+        private void hideKeyboard() {
+            InputMethodManager imm = (InputMethodManager)getContext().getSystemService(
+                    Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(editTextSearchLocation.getWindowToken(), 0);
+        }
+
+        private void checkConnectivity() {
+            if (!connectionManager.isConnectedToNetwork()) {
+                cancel(true);
             }
         }
     }

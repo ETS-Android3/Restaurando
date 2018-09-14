@@ -35,6 +35,9 @@ public class LocationManager implements PermissionAction {
         return new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
+                if (LocationManager.this.location == null) {
+                    locationDependent.withLocation(asString(location));
+                }
                 LocationManager.this.location = location;
             }
 
@@ -66,8 +69,9 @@ public class LocationManager implements PermissionAction {
             requestLocation();
             location = locationManager.getLastKnownLocation(provider);
         }
-
-        locationDependent.withLocation(asString(location));
+        if (location != null) {
+            locationDependent.withLocation(asString(location));
+        }
     }
 
     @SuppressLint("MissingPermission")

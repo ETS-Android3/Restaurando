@@ -126,7 +126,7 @@ public class YelpSearch {
         Gson gson = new GsonBuilder().create();
         Yelp yelp = gson.fromJson(searchResponseJson, Yelp.class);
 
-        if (yelp.businesses.size() == 0) {
+        if (yelp == null || yelp.businesses == null || yelp.businesses.size() == 0) {
             return restaurantList;
         }
 
