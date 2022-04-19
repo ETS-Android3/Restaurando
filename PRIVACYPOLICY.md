@@ -38,7 +38,7 @@ This Application does not automatically collect, share nor retain any informatio
 What are my opt-out rights?
 If your app uses geolocation or taps into advertising services, check the appropriate branches linked above.
 
-You can stop all collection of information by the Application easily by uninstalling the Application. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network. You can also request to opt-out via email, at privacy@applicationsite.com.
+You can stop all collection of information by the Application easily by uninstalling the Application. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
 
  
 
